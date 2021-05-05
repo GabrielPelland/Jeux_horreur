@@ -10,11 +10,11 @@ public class MonsterFiniteStateMachine : MonoBehaviour
     private Animator animator;
 
     public AmbushPoints ambushPoints;
-   
 
-    public enum State { ChasePlayer, PrepareForNextAmbush, WaitForAmbush, Ambushing, HeardSound, ChaseSound };
+
+    public enum State { ChasePlayer, PrepareForNextAmbush, WaitForAmbush, Ambushing, HeardSound, ChaseSound, ResumeInterruptedAction };
     public State state;
-    private State interruptedState;
+    public State interruptedState;
 
     public Vector3 soundDestination;
 
@@ -28,16 +28,23 @@ public class MonsterFiniteStateMachine : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInfo>();
-        
+
 
     }
 
     public void SoundTriggered(Vector3 soundPos)
     {
         soundDestination = soundPos;
+        interruptedState = new State();
         interruptedState = state;
+
         UpdateState(State.HeardSound);
-        
+
+        agent.isStopped = true;
+        animator.SetBool("SoundAlert", true);
+        animator.SetBool("Running", false);
+        StartCoroutine(TimeSoundAlert());
+
     }
 
     private void Update()
@@ -50,35 +57,36 @@ public class MonsterFiniteStateMachine : MonoBehaviour
                 agent.SetDestination(player.transform.position);
                 break;
 
-            
+
             //Currently not moving, waiting for the player to trigger a reaction
             case State.WaitForAmbush:
 
-              
+
+
                 if (ambushPoints.points[ambushPoints.currentID].triggered)
                 {
                     AmbushPoint ambush = ambushPoints.points[ambushPoints.currentID];
 
                     agent.isStopped = false;
-                    animator.SetBool("WaitForAmbush", false);
+
                     if (ambush.type == AmbushPoint.Type.Run)
-                    {                   
-                        animator.SetTrigger("TriggerRun");
-                        
-                        print("TriggerRun");
+                    {
+                        animator.SetBool("Running", true);
+
                         agent.SetDestination(ambush.secondRunPoint.transform.position);
 
                         UpdateState(State.Ambushing);
-                    } else if (ambush.type == AmbushPoint.Type.Ambush)
+                    }
+                    else if (ambush.type == AmbushPoint.Type.Ambush)
                     {
-                        animator.SetTrigger("TriggerAmbush");
+
 
                         print("TriggerAmbush");
                     }
 
                     if (ambushPoints.points.Count > ambushPoints.currentID) ambushPoints.currentID++;
                     else print("Reach all possible");
-                    
+
                 }
 
                 break;
@@ -92,7 +100,7 @@ public class MonsterFiniteStateMachine : MonoBehaviour
                     agent.SetDestination(ambushPoints.points[ambushPoints.currentID].transform.position);
 
                     UpdateState(State.PrepareForNextAmbush);
-                }         
+                }
 
                 break;
 
@@ -102,7 +110,7 @@ public class MonsterFiniteStateMachine : MonoBehaviour
                 if (agent.remainingDistance < 0.1f)
                 {
                     agent.isStopped = true;
-                    animator.SetBool("WaitForAmbush", true);
+                    animator.SetBool("Running", false);
                     UpdateState(State.WaitForAmbush);
                 }
 
@@ -110,64 +118,66 @@ public class MonsterFiniteStateMachine : MonoBehaviour
 
             case State.HeardSound:
 
-                agent.isStopped = true;
-                animator.SetTrigger("SoundAlert");
-                StartCoroutine(TimeSoundAlert(5f));
-                UpdateState(State.ChaseSound);
+                //Waiting for animation to finish
 
                 break;
 
             case State.ChaseSound:
 
                 StopAllCoroutines();
-                agent.isStopped = false;
-                agent.SetDestination(soundDestination);
-                UpdateState(State.ChaseSound);
+
+                if (agent.remainingDistance < 0.1f)
+                {
+                    UpdateState(State.ResumeInterruptedAction);
+
+                }
 
                 break;
 
+            case State.ResumeInterruptedAction:
 
+                if (interruptedState == State.WaitForAmbush)
+                {
+                    UpdateState(State.Ambushing);
+                }
+                else
+                {
+                    UpdateState(interruptedState);
+                }
+
+                break;
         }
 
     }
 
-    public IEnumerator TimeSoundAlert(float time)
+    public IEnumerator TimeSoundAlert()
     {
-<<<<<<< HEAD
         while (!animator.GetCurrentAnimatorStateInfo(0).IsName("SoundAlert"))
         {
-            print("SoundAlert");
             yield return null;
         }
-
         while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
-            {
-                print(animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
-                yield return new WaitForSeconds(0.3f);
-            }
+        {
+            print(animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            yield return new WaitForSeconds(0.3f);
+        }
 
-            print("not now");
-
-            animator.SetBool("SoundAlert", false);
-            animator.SetBool("Running", true);
-            UpdateState(State.ChaseSound);
-            agent.isStopped = false;
-            agent.SetDestination(soundDestination);
-       
-
-=======
-        yield return new WaitForSeconds(time);
+        animator.SetBool("SoundAlert", false);
+        animator.SetBool("Running", true);
         UpdateState(State.ChaseSound);
->>>>>>> parent of 4029f02 (ratatat)
+        agent.isStopped = false;
+        agent.SetDestination(soundDestination);
+
+
     }
 
-    
+
 
 
 
     public void UpdateState(State _state)
     {
-        state = _state;       
+        state = _state;
     }
 
 
