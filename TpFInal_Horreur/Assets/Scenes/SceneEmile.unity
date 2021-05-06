@@ -171,7 +171,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 36bdb284ceade424f981c318843d6baf, type: 2}
+  - {fileID: 2100000, guid: ec1b9d7b341844d26a9a8d38fbbe46c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -461,6 +461,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 214508921}
   monster: {fileID: 1964876350}
+  sensX: 0
+  sensY: 0
+  multiplier: 0
 --- !u!4 &308734192
 Transform:
   m_ObjectHideFlags: 0
@@ -1064,7 +1067,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 36bdb284ceade424f981c318843d6baf, type: 2}
+  - {fileID: 2100000, guid: ec1b9d7b341844d26a9a8d38fbbe46c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1342,7 +1345,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 36bdb284ceade424f981c318843d6baf, type: 2}
+  - {fileID: 2100000, guid: ec1b9d7b341844d26a9a8d38fbbe46c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
