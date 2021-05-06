@@ -5,8 +5,14 @@ using UnityEngine;
 public class GM : MonoBehaviour
 {
 	public GameObject player;
-	public MonsterFiniteStateMachine monster;	
-	
+	public MonsterFiniteStateMachine monster;
+
+	//FPS Controller
+	public float sensX;
+	public float sensY;
+	public float multiplier;
+
+
 	//Singleton - GameManager
 	public static GM i;
 	private void Awake()
@@ -26,7 +32,12 @@ public class GM : MonoBehaviour
 		DontDestroyOnLoad(gameObject);
 	}
 
-
+    private void Start()
+    {
+		sensX = 100f;
+		sensY = 100f;
+		multiplier = 0.01f;
+}
 
 
 }
