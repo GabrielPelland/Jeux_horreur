@@ -6,7 +6,7 @@ using UnityEngine;
 public class ItemObject : ScriptableObject
 {
     public GameObject itemModel;
-    public Sprite itemIcon;
+    public GameObject itemIcon;
     public ItemStatut itemStatut;
     public ItemType itemType;
 
