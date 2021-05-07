@@ -8,27 +8,25 @@ public class Inventory : MonoBehaviour
     public GameObject[] inventoryItem;
     public GameObject[] inventorySlot;
     public bool[] isFull;
-    string[] selectSlot;
 
     //UI
     [SerializeField] GameObject basicSlot;
-    [SerializeField] GameObject selectedSlot;
+    [SerializeField] GameObject selectSlot;
 
     private GameObject basicSlotSprite;
+    private GameObject selectSlotSprite;
     private GameObject slotCenter;
 
     private void Start()
     {
         inventoryItem = new GameObject[GM.i.nbSlot];
         inventorySlot = new GameObject[GM.i.nbSlot];
-        selectSlot = new string[GM.i.nbSlot];
 
         isFull = new bool[GM.i.nbSlot];
 
         for (int i = 0; i < isFull.Length; i++)
         {
             isFull[i] = false;
-            selectSlot[i] = "Alpha" + i.ToString();
         }
 
         slotCenter = GameObject.Find("Slots");
@@ -48,5 +46,19 @@ public class Inventory : MonoBehaviour
             basicSlotSprite.transform.position = new Vector3(slotCenter.transform.position.x + slotSpace, slotCenter.transform.position.y, slotCenter.transform.position.z);
             inventorySlot[i] = basicSlotSprite;
         }
+    }
+
+    void PressKey()
+    {
+        for (int i = 0; i < inventorySlot.Length; i++)
+        {
+            if(Input.GetKeyDown(i.ToString()))
+            {
+                selectSlotSprite = GameObject.Instantiate(selectSlot);
+                selectSlotSprite.transform.position = inventorySlot[i].transform.GetChild(0).gameObject.transform.position;
+                selectSlotSprite.transform.parent = inventorySlot[i].transform.GetChild(0);
+            }
+        }
+        
     }
 }
