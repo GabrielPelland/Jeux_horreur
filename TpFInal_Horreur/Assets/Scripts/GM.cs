@@ -12,6 +12,9 @@ public class GM : MonoBehaviour
 	public float sensY;
 	public float multiplier;
 
+	//Inventaire
+	public int nbSlot;
+
 
 	//Singleton - GameManager
 	public static GM i;
@@ -30,14 +33,10 @@ public class GM : MonoBehaviour
 
 		//Set SoundManager to DontDestroyOnLoad so that it won't be destroyed when reloading our scene.
 		DontDestroyOnLoad(gameObject);
-	}
 
-    private void Start()
-    {
 		sensX = 100f;
 		sensY = 100f;
 		multiplier = 0.01f;
-}
-
-
+		nbSlot = 6;
+	}
 }
