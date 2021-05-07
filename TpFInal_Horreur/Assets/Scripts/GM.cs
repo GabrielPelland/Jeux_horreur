@@ -37,6 +37,6 @@ public class GM : MonoBehaviour
 		sensX = 100f;
 		sensY = 100f;
 		multiplier = 0.01f;
-		nbSlot = 4;
+		nbSlot = 6;
 	}
 }

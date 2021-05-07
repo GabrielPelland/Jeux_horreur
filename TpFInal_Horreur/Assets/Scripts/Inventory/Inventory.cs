@@ -33,6 +33,11 @@ public class Inventory : MonoBehaviour
         CreateInventory();
     }
 
+    private void Update()
+    {
+        PressKey();
+    }
+
     void CreateInventory()
     {
         int slotSpace;
@@ -50,13 +55,35 @@ public class Inventory : MonoBehaviour
 
     void PressKey()
     {
-        for (int i = 0; i < inventorySlot.Length; i++)
+        int keyIndexSlot = 0;
+        int keySelectSlot = 0;
+
+        for (int i = 0; i < (inventorySlot.Length + 1); i++)
         {
-            if(Input.GetKeyDown(i.ToString()))
+            if ( i == 0)
             {
-                selectSlotSprite = GameObject.Instantiate(selectSlot);
-                selectSlotSprite.transform.position = inventorySlot[i].transform.GetChild(0).gameObject.transform.position;
-                selectSlotSprite.transform.parent = inventorySlot[i].transform.GetChild(0);
+                keyIndexSlot = 0;
+                keySelectSlot = 0;
+            }
+            else if (i >= 1)
+            {
+                keyIndexSlot = (i - 1);
+                keySelectSlot = i;
+
+            }
+
+
+            if(Input.GetKeyDown((keySelectSlot).ToString()))
+                {
+                    if (selectSlotSprite != null)
+                    {
+                        Destroy(selectSlotSprite);
+                    }
+                
+                    selectSlotSprite = GameObject.Instantiate(selectSlot);
+                    selectSlotSprite.transform.position = inventorySlot[keyIndexSlot].transform.GetChild(0).gameObject.transform.position;
+                    selectSlotSprite.transform.parent = inventorySlot[keyIndexSlot].transform.GetChild(0);
+
             }
         }
         
