@@ -450,7 +450,8 @@ MonoBehaviour:
   isFull: 
   basicSlot: {fileID: 3451401985774941446, guid: eba5ac845295f4dba970298ffeffe1cb,
     type: 3}
-  selectedSlot: {fileID: 0}
+  selectSlot: {fileID: 3451401985774941446, guid: acd1b7b772a9b4665b744b2efb993169,
+    type: 3}
 --- !u!1 &358853614
 GameObject:
   m_ObjectHideFlags: 0
