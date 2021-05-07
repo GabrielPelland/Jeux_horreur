@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 187996146}
   - component: {fileID: 187996145}
   - component: {fileID: 187996144}
+  - component: {fileID: 187996148}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -273,6 +274,18 @@ MonoBehaviour:
   orientation: {fileID: 1206608747}
   jumpKey: 32
   sprintKey: 115
+--- !u!114 &187996148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187996142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc0737d09877a449a8071ad47a649a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &194941349
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryItem: []
   inventorySlot: []
+  isFull: 
   basicSlot: {fileID: 3451401985774941446, guid: eba5ac845295f4dba970298ffeffe1cb,
     type: 3}
   selectedSlot: {fileID: 0}
