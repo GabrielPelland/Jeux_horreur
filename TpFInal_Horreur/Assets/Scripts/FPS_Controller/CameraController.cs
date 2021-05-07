@@ -9,10 +9,6 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     //VARIABLES hahahaa
-    //Parametres
-    private float sensX;
-    private float sensY;
-    float multiplier;
 
     //Donnee
     [SerializeField] Transform cam = null;
@@ -26,16 +22,9 @@ public class CameraController : MonoBehaviour
     float xRotation;
     float yRotation;
 
-    //Script
-    [SerializeField] private GM gm;
-
     //Commencement du jeu
     private void Start()
     {
-        sensX = gm.sensX;
-        sensY = gm.sensY;
-        multiplier = gm.multiplier;
-
         //Curseur
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -49,8 +38,8 @@ public class CameraController : MonoBehaviour
         mouseY = Input.GetAxisRaw("Mouse Y");
 
         //Rotation mouse
-        yRotation += mouseX * sensX * multiplier;
-        xRotation -= mouseY * sensY * multiplier;
+        yRotation += mouseX * GM.i.sensX * GM.i.multiplier;
+        xRotation -= mouseY * GM.i.sensY * GM.i.multiplier;
 
         //Limitations rotation
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);

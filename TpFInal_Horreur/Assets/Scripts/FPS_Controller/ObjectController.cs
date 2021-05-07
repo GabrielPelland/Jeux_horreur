@@ -8,11 +8,6 @@ using UnityEngine;
 public class ObjectController : MonoBehaviour
 {
     //VARIABLES
-    //Parametres
-    private float sensX;
-    private float sensY;
-    float multiplier;
-
     [SerializeField] GameObject objectHoler;
 
     //Entree mouse
@@ -23,17 +18,6 @@ public class ObjectController : MonoBehaviour
     float xRotation;
     float yRotation;
 
-
-    //Script
-    [SerializeField] private GM gm;
-
-    private void Start()
-    {
-        sensX = gm.sensX;
-        sensY = gm.sensY;
-        multiplier = gm.multiplier;
-    }
-
     //Sur updates
     private void Update()
     {
@@ -42,8 +26,8 @@ public class ObjectController : MonoBehaviour
         mouseY = Input.GetAxisRaw("Mouse Y");
 
         //Rotation souris
-        yRotation += mouseX * sensX * multiplier;
-        xRotation -= mouseY * sensY * multiplier;
+        yRotation += mouseX * GM.i.sensX * GM.i.multiplier;
+        xRotation -= mouseY * GM.i.sensY * GM.i.multiplier;
 
         //Limitations rotation
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
