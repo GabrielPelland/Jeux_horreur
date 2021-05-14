@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!64 &1510424484793552074
+--- !u!64 &4559328086020857378
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4096196368026765887}
+  m_GameObject: {fileID: 1998871951920538323}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -43,7 +43,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3716397991725846661}
+  - {fileID: 1222370918534707305}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -94,7 +94,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1001 &3754301372413392750
+--- !u!1001 &1692230458042621826
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -168,15 +168,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d38fc6892e4d244cade8379cc73da1d, type: 3}
---- !u!1 &4096196368026765887 stripped
+--- !u!1 &1998871951920538323 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0d38fc6892e4d244cade8379cc73da1d,
     type: 3}
-  m_PrefabInstance: {fileID: 3754301372413392750}
+  m_PrefabInstance: {fileID: 1692230458042621826}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3716397991725846661 stripped
+--- !u!4 &1222370918534707305 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0d38fc6892e4d244cade8379cc73da1d,
     type: 3}
-  m_PrefabInstance: {fileID: 3754301372413392750}
+  m_PrefabInstance: {fileID: 1692230458042621826}
   m_PrefabAsset: {fileID: 0}
