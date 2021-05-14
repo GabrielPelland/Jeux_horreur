@@ -1289,13 +1289,13 @@ static const Il2CppTokenRangePair s_rgctxIndices[2] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[7] = 
 {
-	{ (Il2CppRGCTXDataType)2, 28760 },
-	{ (Il2CppRGCTXDataType)3, 30549 },
-	{ (Il2CppRGCTXDataType)3, 29257 },
+	{ (Il2CppRGCTXDataType)2, 28762 },
+	{ (Il2CppRGCTXDataType)3, 30551 },
+	{ (Il2CppRGCTXDataType)3, 29259 },
+	{ (Il2CppRGCTXDataType)2, 28763 },
+	{ (Il2CppRGCTXDataType)3, 30552 },
 	{ (Il2CppRGCTXDataType)2, 28761 },
-	{ (Il2CppRGCTXDataType)3, 30550 },
-	{ (Il2CppRGCTXDataType)2, 28759 },
-	{ (Il2CppRGCTXDataType)2, 28766 },
+	{ (Il2CppRGCTXDataType)2, 28768 },
 };
 extern const Il2CppCodeGenModule g_Sirenix_OdinInspector_AttributesCodeGenModule;
 const Il2CppCodeGenModule g_Sirenix_OdinInspector_AttributesCodeGenModule = 

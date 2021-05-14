@@ -74,75 +74,87 @@ extern void Interactible_OnTriggerSound_mA36E49872F0A05F381FADA67AD3CC34E822131C
 extern void Interactible_Initialize_m9B811DB11377B429CB6209C8126C1F3D004D94FA (void);
 // 0x0000001B System.Void Interactible::.ctor()
 extern void Interactible__ctor_mA618E5D4409C0AD4C2A62C126ACFF97C30E7A739 (void);
-// 0x0000001C System.Void Inventory::Start()
+// 0x0000001C System.Void CollectItem::OnTriggerEnter(UnityEngine.Collider)
+extern void CollectItem_OnTriggerEnter_m6C4968198CCF8FF9AEE7DA27CAF79E26317945AB (void);
+// 0x0000001D System.Void CollectItem::.ctor()
+extern void CollectItem__ctor_m54862628AEEEBB434769CFFF5494232D7E303E00 (void);
+// 0x0000001E System.Void Inventory::Start()
 extern void Inventory_Start_mF9115FBB18A7772CAD4ED60B31A2F128DA55DF83 (void);
-// 0x0000001D System.Void Inventory::CreateInventory()
+// 0x0000001F System.Void Inventory::Update()
+extern void Inventory_Update_mE4B8EF6EC843DC47E54BFFEB6510D47F0E9F8345 (void);
+// 0x00000020 System.Void Inventory::CreateInventory()
 extern void Inventory_CreateInventory_mB68DE6B236E012BACF2AB86423202A848D134F74 (void);
-// 0x0000001E System.Void Inventory::.ctor()
+// 0x00000021 System.Void Inventory::PressKey()
+extern void Inventory_PressKey_m48A7772CAB19D16A9E22DD93A9B43626A8674D3A (void);
+// 0x00000022 System.Void Inventory::.ctor()
 extern void Inventory__ctor_mB946DCD27224D66DDEE96C7EE8355A7E3FE91CC7 (void);
-// 0x0000001F System.Void ItemInventory::Start()
+// 0x00000023 System.Void ItemInventory::Start()
 extern void ItemInventory_Start_m282000651F4920DF1E29E6B9D29F4A7D5FA7A81A (void);
-// 0x00000020 System.Void ItemInventory::GenerateObject()
+// 0x00000024 System.Void ItemInventory::Inventaire()
+extern void ItemInventory_Inventaire_m2F0D1BD7BBCCF75C31C8690D97B93742649B667B (void);
+// 0x00000025 System.Void ItemInventory::GenerateObject()
 extern void ItemInventory_GenerateObject_mF033E195B34AB83915CAB9EAB52F196A74D1ACEB (void);
-// 0x00000021 System.Void ItemInventory::InventoryItem()
+// 0x00000026 System.Void ItemInventory::InventoryItem()
 extern void ItemInventory_InventoryItem_m6BBE71871B6E13CFE0C0316D05FE52BEE3904B42 (void);
-// 0x00000022 System.Void ItemInventory::.ctor()
+// 0x00000027 System.Void ItemInventory::CollectItem()
+extern void ItemInventory_CollectItem_m3E6DF5C1FC06321142140C74D8D8FA6406E99105 (void);
+// 0x00000028 System.Void ItemInventory::.ctor()
 extern void ItemInventory__ctor_m0B7DB99B1DF04A02B96724AA36D934536988FA7F (void);
-// 0x00000023 System.Void ItemObject::.ctor()
+// 0x00000029 System.Void ItemObject::.ctor()
 extern void ItemObject__ctor_m653C457350FD4DFE1FB33FFB4041C012B1461C45 (void);
-// 0x00000024 System.Void MonsterFiniteStateMachine::Awake()
+// 0x0000002A System.Void MonsterFiniteStateMachine::Awake()
 extern void MonsterFiniteStateMachine_Awake_m1AC51F35468E10C210ED948AD65796D12EF61890 (void);
-// 0x00000025 System.Void MonsterFiniteStateMachine::Start()
+// 0x0000002B System.Void MonsterFiniteStateMachine::Start()
 extern void MonsterFiniteStateMachine_Start_m68CC36256C83AE4B021138EE5A056F14558A706D (void);
-// 0x00000026 System.Void MonsterFiniteStateMachine::SoundTriggered(UnityEngine.Vector3)
+// 0x0000002C System.Void MonsterFiniteStateMachine::SoundTriggered(UnityEngine.Vector3)
 extern void MonsterFiniteStateMachine_SoundTriggered_m8F932E5911E4056F8A5F680EDD78316B3B0F9C3C (void);
-// 0x00000027 System.Void MonsterFiniteStateMachine::Update()
+// 0x0000002D System.Void MonsterFiniteStateMachine::Update()
 extern void MonsterFiniteStateMachine_Update_m3F45201000F96F1C9ADC5751424A5B2C1DFEA7B8 (void);
-// 0x00000028 System.Collections.IEnumerator MonsterFiniteStateMachine::TimeSoundAlert()
+// 0x0000002E System.Collections.IEnumerator MonsterFiniteStateMachine::TimeSoundAlert()
 extern void MonsterFiniteStateMachine_TimeSoundAlert_mBBB8CED76EA8CD674A42D0AD917C4DB9CF6B413E (void);
-// 0x00000029 System.Void MonsterFiniteStateMachine::UpdateState(MonsterFiniteStateMachine_State)
+// 0x0000002F System.Void MonsterFiniteStateMachine::UpdateState(MonsterFiniteStateMachine_State)
 extern void MonsterFiniteStateMachine_UpdateState_m6CD76B5CCD9C4502FA04F8197B5839447A8C901B (void);
-// 0x0000002A System.Void MonsterFiniteStateMachine::.ctor()
+// 0x00000030 System.Void MonsterFiniteStateMachine::.ctor()
 extern void MonsterFiniteStateMachine__ctor_m128356DEB532449891D534BEF657F93286634736 (void);
-// 0x0000002B System.Void PlayerInfo::.ctor()
+// 0x00000031 System.Void PlayerInfo::.ctor()
 extern void PlayerInfo__ctor_mF27966701E28E528D88A02281CE2381C841F87EF (void);
-// 0x0000002C System.Void SoundEvent::.ctor()
+// 0x00000032 System.Void SoundEvent::.ctor()
 extern void SoundEvent__ctor_mEB15C944D4DCED470D84F3236DC29F7DE2988D83 (void);
-// 0x0000002D System.Void TriggerBox::OnTriggerEnter(UnityEngine.Collider)
+// 0x00000033 System.Void TriggerBox::OnTriggerEnter(UnityEngine.Collider)
 extern void TriggerBox_OnTriggerEnter_m19BC34686E501EA697C3D5B4BB90CAB1D2775009 (void);
-// 0x0000002E System.Void TriggerBox::.ctor()
+// 0x00000034 System.Void TriggerBox::.ctor()
 extern void TriggerBox__ctor_m3624398C4DE3DC032769EE6A61AAA05F0DE769EC (void);
-// 0x0000002F System.Void UnityTemplateProjects.SimpleCameraController::OnEnable()
+// 0x00000035 System.Void UnityTemplateProjects.SimpleCameraController::OnEnable()
 extern void SimpleCameraController_OnEnable_m23B1FC65DDEECCB31E2A64715EF11299D5FC671B (void);
-// 0x00000030 UnityEngine.Vector3 UnityTemplateProjects.SimpleCameraController::GetInputTranslationDirection()
+// 0x00000036 UnityEngine.Vector3 UnityTemplateProjects.SimpleCameraController::GetInputTranslationDirection()
 extern void SimpleCameraController_GetInputTranslationDirection_m73C99DB69CEB467834BBA00A62415D1CEEF0CB47 (void);
-// 0x00000031 System.Void UnityTemplateProjects.SimpleCameraController::Update()
+// 0x00000037 System.Void UnityTemplateProjects.SimpleCameraController::Update()
 extern void SimpleCameraController_Update_m703B3BEF0A4BD9BCC6A89BA83CACEC85FB45CEA5 (void);
-// 0x00000032 System.Void UnityTemplateProjects.SimpleCameraController::.ctor()
+// 0x00000038 System.Void UnityTemplateProjects.SimpleCameraController::.ctor()
 extern void SimpleCameraController__ctor_mDD687DF4764B1C2C77BA64E8836650F6F31F144A (void);
-// 0x00000033 System.Void MonsterFiniteStateMachine_<TimeSoundAlert>d__12::.ctor(System.Int32)
+// 0x00000039 System.Void MonsterFiniteStateMachine_<TimeSoundAlert>d__12::.ctor(System.Int32)
 extern void U3CTimeSoundAlertU3Ed__12__ctor_m927E4DCBD1F54B1D3222D6A3852FE0C39EC17CA3 (void);
-// 0x00000034 System.Void MonsterFiniteStateMachine_<TimeSoundAlert>d__12::System.IDisposable.Dispose()
+// 0x0000003A System.Void MonsterFiniteStateMachine_<TimeSoundAlert>d__12::System.IDisposable.Dispose()
 extern void U3CTimeSoundAlertU3Ed__12_System_IDisposable_Dispose_m6322C190C7C401C9B7369E76788BA640CC8722F7 (void);
-// 0x00000035 System.Boolean MonsterFiniteStateMachine_<TimeSoundAlert>d__12::MoveNext()
+// 0x0000003B System.Boolean MonsterFiniteStateMachine_<TimeSoundAlert>d__12::MoveNext()
 extern void U3CTimeSoundAlertU3Ed__12_MoveNext_mE1014AD5B733D2B11EAB7D404D274FA1DBDD99FA (void);
-// 0x00000036 System.Object MonsterFiniteStateMachine_<TimeSoundAlert>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000003C System.Object MonsterFiniteStateMachine_<TimeSoundAlert>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CTimeSoundAlertU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2501D8655ED8483CF239C5E56259178FF74853E2 (void);
-// 0x00000037 System.Void MonsterFiniteStateMachine_<TimeSoundAlert>d__12::System.Collections.IEnumerator.Reset()
+// 0x0000003D System.Void MonsterFiniteStateMachine_<TimeSoundAlert>d__12::System.Collections.IEnumerator.Reset()
 extern void U3CTimeSoundAlertU3Ed__12_System_Collections_IEnumerator_Reset_m8D46D8E10476682FC17348EC3E61F422C483071A (void);
-// 0x00000038 System.Object MonsterFiniteStateMachine_<TimeSoundAlert>d__12::System.Collections.IEnumerator.get_Current()
+// 0x0000003E System.Object MonsterFiniteStateMachine_<TimeSoundAlert>d__12::System.Collections.IEnumerator.get_Current()
 extern void U3CTimeSoundAlertU3Ed__12_System_Collections_IEnumerator_get_Current_mB58C89729440F3CECD3DE99005BDB3BE234A43C4 (void);
-// 0x00000039 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::SetFromTransform(UnityEngine.Transform)
+// 0x0000003F System.Void UnityTemplateProjects.SimpleCameraController_CameraState::SetFromTransform(UnityEngine.Transform)
 extern void CameraState_SetFromTransform_mE0003493BE2BC151ECB65F8FA10FD87DD2D380E9 (void);
-// 0x0000003A System.Void UnityTemplateProjects.SimpleCameraController_CameraState::Translate(UnityEngine.Vector3)
+// 0x00000040 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::Translate(UnityEngine.Vector3)
 extern void CameraState_Translate_m1B8281ABF2A3296F5DE47064F3757FD481E446EE (void);
-// 0x0000003B System.Void UnityTemplateProjects.SimpleCameraController_CameraState::LerpTowards(UnityTemplateProjects.SimpleCameraController_CameraState,System.Single,System.Single)
+// 0x00000041 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::LerpTowards(UnityTemplateProjects.SimpleCameraController_CameraState,System.Single,System.Single)
 extern void CameraState_LerpTowards_mC4C84789CEE27DEC5A70AAF00FC71FE990519AFE (void);
-// 0x0000003C System.Void UnityTemplateProjects.SimpleCameraController_CameraState::UpdateTransform(UnityEngine.Transform)
+// 0x00000042 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::UpdateTransform(UnityEngine.Transform)
 extern void CameraState_UpdateTransform_m405C51A0B661CF16A1A4F5A162529398E1DAC358 (void);
-// 0x0000003D System.Void UnityTemplateProjects.SimpleCameraController_CameraState::.ctor()
+// 0x00000043 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::.ctor()
 extern void CameraState__ctor_m8552062EB90FFEEA837B63DD22A9CB4F438EABDE (void);
-static Il2CppMethodPointer s_methodPointers[61] = 
+static Il2CppMethodPointer s_methodPointers[67] = 
 {
 	AmbushPoint_Start_m4E1434498DD4AECECABC90E39DC63B43D94088F8,
 	AmbushPoint__ctor_m907A273358DF4B35CD8456E6E809DE3A3DC076A4,
@@ -171,12 +183,18 @@ static Il2CppMethodPointer s_methodPointers[61] =
 	Interactible_OnTriggerSound_mA36E49872F0A05F381FADA67AD3CC34E822131C9,
 	Interactible_Initialize_m9B811DB11377B429CB6209C8126C1F3D004D94FA,
 	Interactible__ctor_mA618E5D4409C0AD4C2A62C126ACFF97C30E7A739,
+	CollectItem_OnTriggerEnter_m6C4968198CCF8FF9AEE7DA27CAF79E26317945AB,
+	CollectItem__ctor_m54862628AEEEBB434769CFFF5494232D7E303E00,
 	Inventory_Start_mF9115FBB18A7772CAD4ED60B31A2F128DA55DF83,
+	Inventory_Update_mE4B8EF6EC843DC47E54BFFEB6510D47F0E9F8345,
 	Inventory_CreateInventory_mB68DE6B236E012BACF2AB86423202A848D134F74,
+	Inventory_PressKey_m48A7772CAB19D16A9E22DD93A9B43626A8674D3A,
 	Inventory__ctor_mB946DCD27224D66DDEE96C7EE8355A7E3FE91CC7,
 	ItemInventory_Start_m282000651F4920DF1E29E6B9D29F4A7D5FA7A81A,
+	ItemInventory_Inventaire_m2F0D1BD7BBCCF75C31C8690D97B93742649B667B,
 	ItemInventory_GenerateObject_mF033E195B34AB83915CAB9EAB52F196A74D1ACEB,
 	ItemInventory_InventoryItem_m6BBE71871B6E13CFE0C0316D05FE52BEE3904B42,
+	ItemInventory_CollectItem_m3E6DF5C1FC06321142140C74D8D8FA6406E99105,
 	ItemInventory__ctor_m0B7DB99B1DF04A02B96724AA36D934536988FA7F,
 	ItemObject__ctor_m653C457350FD4DFE1FB33FFB4041C012B1461C45,
 	MonsterFiniteStateMachine_Awake_m1AC51F35468E10C210ED948AD65796D12EF61890,
@@ -206,7 +224,7 @@ static Il2CppMethodPointer s_methodPointers[61] =
 	CameraState_UpdateTransform_m405C51A0B661CF16A1A4F5A162529398E1DAC358,
 	CameraState__ctor_m8552062EB90FFEEA837B63DD22A9CB4F438EABDE,
 };
-static const int32_t s_InvokerIndices[61] = 
+static const int32_t s_InvokerIndices[67] = 
 {
 	23,
 	23,
@@ -230,6 +248,12 @@ static const int32_t s_InvokerIndices[61] =
 	89,
 	23,
 	23,
+	23,
+	23,
+	23,
+	23,
+	23,
+	26,
 	23,
 	23,
 	23,
@@ -274,7 +298,7 @@ extern const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	61,
+	67,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

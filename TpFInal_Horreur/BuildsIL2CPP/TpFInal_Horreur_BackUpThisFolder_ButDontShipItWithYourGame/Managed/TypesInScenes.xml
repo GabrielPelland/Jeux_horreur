@@ -49,11 +49,16 @@
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="CameraController" preserve="nothing"/>
 		<type fullname="CameraMove" preserve="nothing"/>
+		<type fullname="CollectItem" preserve="nothing"/>
 		<type fullname="GM" preserve="nothing"/>
+		<type fullname="Inventory" preserve="nothing"/>
 		<type fullname="ItemInventory" preserve="nothing"/>
 		<type fullname="ItemObject" preserve="nothing"/>
 		<type fullname="ObjectController" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Sirenix.Serialization.Config">
+		<type fullname="Sirenix.Serialization.GlobalSerializationConfig" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
 		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerBitField" preserve="nothing"/>
@@ -115,6 +120,7 @@
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.LayoutElement" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Mask" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.RawImage" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.ScrollRect" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Scrollbar" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>
