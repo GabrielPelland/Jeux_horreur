@@ -8331,7 +8331,17 @@ PrefabInstance:
     - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 300
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LightUnit
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
         type: 3}
@@ -8351,7 +8361,7 @@ PrefabInstance:
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 3600
+      value: 1600
       objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
