@@ -10,11 +10,15 @@ public class CollectItem : MonoBehaviour
     {
         print("collison");
 
-        itemCollision = collision.transform.parent.gameObject;
-        if (itemCollision.GetComponent<ItemInventory>() != null)
+        if (collision.transform.parent != null)
         {
-            itemCollision.GetComponent<ItemInventory>().CollectItem();
+            itemCollision = collision.transform.parent.gameObject;
+
+            if (itemCollision.GetComponent<ItemInventory>() != null)
+                {
+                    itemCollision.GetComponent<ItemInventory>().CollectItem();
+                }
         }
-        
+
     }
 }
