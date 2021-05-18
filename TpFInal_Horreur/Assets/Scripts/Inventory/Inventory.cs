@@ -60,7 +60,7 @@ public class Inventory : MonoBehaviour
 
         for (int i = 0; i < (inventorySlot.Length + 1); i++)
         {
-            if ( i == 0)
+            if (i == 0)
             {
                 keyIndexSlot = 0;
                 keySelectSlot = 0;
@@ -73,19 +73,33 @@ public class Inventory : MonoBehaviour
             }
 
 
-            if(Input.GetKeyDown((keySelectSlot).ToString()))
+            if (Input.GetKeyDown((keySelectSlot).ToString()))
+            {
+                if (selectSlotSprite != null)
                 {
-                    if (selectSlotSprite != null)
-                    {
-                        Destroy(selectSlotSprite);
-                    }
-                
-                    selectSlotSprite = GameObject.Instantiate(selectSlot);
-                    selectSlotSprite.transform.position = inventorySlot[keyIndexSlot].transform.GetChild(0).gameObject.transform.position;
-                    selectSlotSprite.transform.parent = inventorySlot[keyIndexSlot].transform.GetChild(0);
+                    Destroy(selectSlotSprite);
+                }
 
+
+                selectSlotSprite = GameObject.Instantiate(selectSlot);
+                selectSlotSprite.transform.position = inventorySlot[keyIndexSlot].transform.GetChild(0).gameObject.transform.position;
+                selectSlotSprite.transform.parent = inventorySlot[keyIndexSlot].transform.GetChild(0);
+                InHandItem(keyIndexSlot);
             }
         }
-        
+
+    }
+
+    void InHandItem(int i)
+    {
+        if (isFull[i] == true)
+        {
+            print("PLEIN");
+            inventoryItem[i].GetComponent<ItemInventory>().InHandObject();
+        }
+        else if (isFull[i] == false)
+        {
+            print("vide");
+        }
     }
 }
