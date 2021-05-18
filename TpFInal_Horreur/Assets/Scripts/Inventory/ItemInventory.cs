@@ -6,8 +6,9 @@ public class ItemInventory : MonoBehaviour
 {
     [SerializeField] private ItemObject itemObject;
     private GameObject itemModel;
+    private GameObject itemHand;
     private GameObject itemIcon;
-
+    private GameObject ItemObjectHolder;
     GameObject inventoryObject;
     Inventory inventory;
 
@@ -18,6 +19,7 @@ public class ItemInventory : MonoBehaviour
         Inventaire();
         inventoryObject = GameObject.Find("Inventory");
         inventory = inventoryObject.GetComponent<Inventory>();
+        ItemObjectHolder = GameObject.Find("ItemPosition");
     }
 
     void Inventaire()
@@ -29,6 +31,10 @@ public class ItemInventory : MonoBehaviour
         else if (itemObject.itemStatut == ItemObject.ItemStatut.InInventory)
         {
             InventoryItem();
+        }
+        else if(itemObject.itemStatut == ItemObject.ItemStatut.InHand)
+        {
+            InHandObject();
         }
     }
 
@@ -63,6 +69,13 @@ public class ItemInventory : MonoBehaviour
 
         Destroy(itemModel);
 
+    }
+
+    public void InHandObject()
+    {
+        itemHand = GameObject.Instantiate(itemObject.itemModel);
+        itemHand.transform.position = ItemObjectHolder.transform.position;
+        itemHand.transform.parent = ItemObjectHolder.transform;
     }
 
     public void CollectItem()
