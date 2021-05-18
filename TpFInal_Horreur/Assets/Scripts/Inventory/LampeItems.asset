@@ -17,4 +17,4 @@ MonoBehaviour:
   itemIcon: {fileID: 3451401985774941446, guid: 53851fe3997fa44eba4c209733d9caf6,
     type: 3}
   itemStatut: 1
-  itemType: 2
+  itemType: 3

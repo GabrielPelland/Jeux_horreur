@@ -8,8 +8,6 @@ public class CollectItem : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        print("collison");
-
         if (collision.transform.parent != null)
         {
             itemCollision = collision.transform.parent.gameObject;

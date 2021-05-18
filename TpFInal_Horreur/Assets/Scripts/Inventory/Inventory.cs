@@ -18,6 +18,8 @@ public class Inventory : MonoBehaviour
     private GameObject slotCenter;
     private GameObject objectHolder;
 
+    int currentItemId;
+
     private void Start()
     {
         inventoryItem = new GameObject[GM.i.nbSlot];
@@ -81,11 +83,17 @@ public class Inventory : MonoBehaviour
                 {
                     Destroy(selectSlotSprite);
                 }
-                
+
                 selectSlotSprite = GameObject.Instantiate(selectSlot);
                 selectSlotSprite.transform.position = inventorySlot[keyIndexSlot].transform.GetChild(0).gameObject.transform.position;
                 selectSlotSprite.transform.parent = inventorySlot[keyIndexSlot].transform.GetChild(0);
+
+                
+
                 InHandItem(keyIndexSlot);
+            }
+            else if (Input.GetKey(KeyCode.E))
+            {
                 UseItem(keyIndexSlot);
             }
         }
@@ -96,24 +104,23 @@ public class Inventory : MonoBehaviour
     {
         if (inventoryItem[selectedSlot] != null)
         {
-            switch (inventoryItem[selectedSlot].GetComponent<ItemInventory>().itemObject.itemType)
+            currentItemId = (int)inventoryItem[selectedSlot].GetComponent<ItemInventory>().itemObject.itemType;
+
+            switch (currentItemId)
             {
-                case inventoryItem[selectedSlot].GetComponent<ItemInventory>().itemObject.itemType.Cle:
+                case 1:
                     print("Cle");
                     break;
-                case inventoryItem[selectedSlot].GetComponent<ItemInventory>().itemObject.itemType.Batterie:
+                case 2:
                     print("Batterie");
                     break;
-                case inventoryItem[selectedSlot].GetComponent<ItemInventory>().itemObject.itemType.Lampe:
+                case 3:
                     print("Lampe");
                     break;
-                case inventoryItem[selectedSlot].GetComponent<ItemInventory>().itemObject.itemType.Carte:
+                case 4:
                     print("Carte");
                     break;
             }
-        }
-        else {
-            print("vide inventory");
         }
     }
 

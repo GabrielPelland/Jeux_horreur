@@ -46,7 +46,6 @@ public class ItemInventory : MonoBehaviour
 
         for (int i = 0; i < inventory.inventoryItem.Length; i++)
         {
-            print("boucle");
             if (inventory.isFull[i] == false)
             {
                 itemIcon = GameObject.Instantiate(itemObject.itemIcon);

@@ -15,11 +15,12 @@ public class ItemObject : ScriptableObject
         InGame,
         InInventory
     }
+
     public enum ItemType
     {
-        Cle,
-        Batterie,
-        Lampe,
-        Carte
+        Cle = 1,
+        Batterie = 2,
+        Lampe = 3,
+        Carte = 4
     }
 }
