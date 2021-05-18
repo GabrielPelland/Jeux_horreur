@@ -8,7 +8,7 @@ public class ItemInventory : MonoBehaviour
     private GameObject itemModel;
     private GameObject itemHand;
     private GameObject itemIcon;
-    private GameObject ItemObjectHolder;
+    [SerializeField] private GameObject itemObjectHolder;
     GameObject inventoryObject;
     Inventory inventory;
 
@@ -19,7 +19,6 @@ public class ItemInventory : MonoBehaviour
         Inventaire();
         inventoryObject = GameObject.Find("Inventory");
         inventory = inventoryObject.GetComponent<Inventory>();
-        ItemObjectHolder = GameObject.Find("ItemPosition");
     }
 
     void Inventaire()
@@ -73,9 +72,10 @@ public class ItemInventory : MonoBehaviour
 
     public void InHandObject()
     {
+        print("item");
         itemHand = GameObject.Instantiate(itemObject.itemModel);
-        itemHand.transform.position = ItemObjectHolder.transform.position;
-        itemHand.transform.parent = ItemObjectHolder.transform;
+        //itemHand.transform.position = new Vector3(itemObjectHolder.transform.position.x, itemObjectHolder.transform.position.y, itemObjectHolder.transform.position.z);
+        itemHand.transform.parent = itemObjectHolder.transform;
     }
 
     public void CollectItem()
