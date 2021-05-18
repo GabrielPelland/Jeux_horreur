@@ -19,6 +19,5 @@ public class CollectItem : MonoBehaviour
                     itemCollision.GetComponent<ItemInventory>().CollectItem();
                 }
         }
-
     }
 }

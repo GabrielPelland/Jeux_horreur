@@ -75,6 +75,7 @@ public class ItemInventory : MonoBehaviour
         print("item");
         itemHand = GameObject.Instantiate(itemObject.itemModel);
         itemHand.transform.position = new Vector3(itemObjectHolder.transform.position.x, itemObjectHolder.transform.position.y, itemObjectHolder.transform.position.z);
+        itemHand.transform.rotation = itemObjectHolder.transform.rotation;
         itemHand.transform.parent = itemObjectHolder.transform;
     }
 
