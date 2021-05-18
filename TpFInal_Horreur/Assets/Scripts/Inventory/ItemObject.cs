@@ -13,8 +13,7 @@ public class ItemObject : ScriptableObject
     public enum ItemStatut
     {
         InGame,
-        InInventory,
-        InHand
+        InInventory
     }
     public enum ItemType
     {

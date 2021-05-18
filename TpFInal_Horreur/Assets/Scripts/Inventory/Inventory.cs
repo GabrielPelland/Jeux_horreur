@@ -16,12 +16,13 @@ public class Inventory : MonoBehaviour
     private GameObject basicSlotSprite;
     private GameObject selectSlotSprite;
     private GameObject slotCenter;
+    private GameObject objectHolder;
 
     private void Start()
     {
         inventoryItem = new GameObject[GM.i.nbSlot];
         inventorySlot = new GameObject[GM.i.nbSlot];
-
+        objectHolder = GameObject.Find("ObjectPosition");
         isFull = new bool[GM.i.nbSlot];
 
         for (int i = 0; i < isFull.Length; i++)
@@ -75,26 +76,60 @@ public class Inventory : MonoBehaviour
 
             if (Input.GetKeyDown((keySelectSlot).ToString()))
             {
+                DestroyHandObject();
                 if (selectSlotSprite != null)
                 {
                     Destroy(selectSlotSprite);
                 }
-
-
+                
                 selectSlotSprite = GameObject.Instantiate(selectSlot);
                 selectSlotSprite.transform.position = inventorySlot[keyIndexSlot].transform.GetChild(0).gameObject.transform.position;
                 selectSlotSprite.transform.parent = inventorySlot[keyIndexSlot].transform.GetChild(0);
                 InHandItem(keyIndexSlot);
+                UseItem(keyIndexSlot);
             }
         }
 
     }
 
-    void InHandItem(int i)
+    void UseItem (int selectedSlot)
     {
-        if (isFull[i] == true)
+        if (inventoryItem[selectedSlot] != null)
         {
-            inventoryItem[i].GetComponent<ItemInventory>().InHandObject();
+            switch (inventoryItem[selectedSlot].GetComponent<ItemInventory>().itemObject.itemType)
+            {
+                case inventoryItem[selectedSlot].GetComponent<ItemInventory>().itemObject.itemType.Cle:
+                    print("Cle");
+                    break;
+                case inventoryItem[selectedSlot].GetComponent<ItemInventory>().itemObject.itemType.Batterie:
+                    print("Batterie");
+                    break;
+                case inventoryItem[selectedSlot].GetComponent<ItemInventory>().itemObject.itemType.Lampe:
+                    print("Lampe");
+                    break;
+                case inventoryItem[selectedSlot].GetComponent<ItemInventory>().itemObject.itemType.Carte:
+                    print("Carte");
+                    break;
+            }
+        }
+        else {
+            print("vide inventory");
+        }
+    }
+
+
+    void InHandItem(int selectedSlot)
+    {
+        if (isFull[selectedSlot] == true)
+        {
+            inventoryItem[selectedSlot].GetComponent<ItemInventory>().InHandObject();
+        }
+    }
+
+    void DestroyHandObject()
+    {
+        foreach (Transform child in objectHolder.transform) {
+            GameObject.Destroy(child.gameObject);
         }
     }
 }

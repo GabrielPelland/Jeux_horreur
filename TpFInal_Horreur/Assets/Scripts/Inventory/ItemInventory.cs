@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ItemInventory : MonoBehaviour
 {
-    [SerializeField] private ItemObject itemObject;
+    public ItemObject itemObject;
     private GameObject itemModel;
     private GameObject itemHand;
     private GameObject itemIcon;
-    [SerializeField] private GameObject itemObjectHolder;
+    private GameObject itemObjectHolder;
     GameObject inventoryObject;
     Inventory inventory;
 
@@ -19,6 +19,7 @@ public class ItemInventory : MonoBehaviour
         Inventaire();
         inventoryObject = GameObject.Find("Inventory");
         inventory = inventoryObject.GetComponent<Inventory>();
+        itemObjectHolder = GameObject.Find("ObjectPosition");
     }
 
     void Inventaire()
@@ -30,10 +31,6 @@ public class ItemInventory : MonoBehaviour
         else if (itemObject.itemStatut == ItemObject.ItemStatut.InInventory)
         {
             InventoryItem();
-        }
-        else if(itemObject.itemStatut == ItemObject.ItemStatut.InHand)
-        {
-            InHandObject();
         }
     }
 
@@ -65,20 +62,17 @@ public class ItemInventory : MonoBehaviour
                 break;
             }
         }
-
         Destroy(itemModel);
-
     }
 
     public void InHandObject()
     {
-        print("item");
         itemHand = GameObject.Instantiate(itemObject.itemModel);
         itemHand.transform.position = new Vector3(itemObjectHolder.transform.position.x, itemObjectHolder.transform.position.y, itemObjectHolder.transform.position.z);
         itemHand.transform.rotation = itemObjectHolder.transform.rotation;
         itemHand.transform.parent = itemObjectHolder.transform;
     }
-
+    
     public void CollectItem()
     {
         itemObject.itemStatut = ItemObject.ItemStatut.InInventory;
