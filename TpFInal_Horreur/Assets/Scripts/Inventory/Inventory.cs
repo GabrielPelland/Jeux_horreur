@@ -94,12 +94,7 @@ public class Inventory : MonoBehaviour
     {
         if (isFull[i] == true)
         {
-            print("PLEIN");
             inventoryItem[i].GetComponent<ItemInventory>().InHandObject();
-        }
-        else if (isFull[i] == false)
-        {
-            print("vide");
         }
     }
 }
