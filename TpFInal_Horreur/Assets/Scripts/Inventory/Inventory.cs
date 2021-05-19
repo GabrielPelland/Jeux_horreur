@@ -119,12 +119,7 @@ public class Inventory : MonoBehaviour
                     break;
                 case 2:
                     GetComponent<ItemLight>().ResetTimeLight();
-
-                    DestroyHandObject();
-                    Destroy(this.transform.GetChild(0).GetChild(selectedSlot).GetChild(1).gameObject);
-                    inventoryItem[selectedSlot] = null;
-                    isFull[selectedSlot] = false;
-
+                    
                     print("Batterie");
                     break;
                 case 3:

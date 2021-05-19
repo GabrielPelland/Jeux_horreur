@@ -59,7 +59,7 @@ public class ItemLight : MonoBehaviour
     {
         print("RESET LIGHT");
         currentTimeLight = startTimeLight;
-        FindLight();
+        lightSlider.value = currentTimeLight;
     }
 
     //Sur update
