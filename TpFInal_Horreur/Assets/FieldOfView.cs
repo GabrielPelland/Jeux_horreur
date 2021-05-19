@@ -20,7 +20,6 @@ public class FieldOfView : MonoBehaviour
 		monster = GetComponentInChildren<MonsterFiniteStateMachine>();
 	}
 
-
 	IEnumerator FindTargetsWithDelay(float delay)
 	{
 		while (true)

@@ -30,7 +30,15 @@ public class GM : MonoBehaviour
     {
 		DeadScreen.enabled = true;
 		DeadScreen.GetComponent<DeadScreen>().image.DOFade(1, 2.5f);
+		
     }
+
+	IEnumerator RestartScene()
+    {
+		yield return new WaitForSeconds(4f);
+		DeadScreen.GetComponent<DeadScreen>().Restart();
+
+	}
 
 	//Singleton - GameManager
 	public static GM i;
