@@ -33,6 +33,7 @@ public class Inventory : MonoBehaviour
         }
 
         slotCenter = GameObject.Find("Slots");
+
         CreateInventory();
     }
 
@@ -115,7 +116,8 @@ public class Inventory : MonoBehaviour
                     print("Batterie");
                     break;
                 case 3:
-                    print("Lampe");
+                    GetComponent<ItemLight>().FindLight();
+                    GM.i.lightOpen = true;
                     break;
                 case 4:
                     print("Carte");

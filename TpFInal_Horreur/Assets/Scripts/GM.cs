@@ -21,6 +21,8 @@ public class GM : MonoBehaviour
     public float maxIntensityLight = 50f;
     public float secondesIntensityLight = 20f;
 
+	public bool lightOpen = false;
+
 
 	//Singleton - GameManager
 	public static GM i;

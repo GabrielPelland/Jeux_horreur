@@ -466,7 +466,6 @@ GameObject:
   - component: {fileID: 6497786779849603934}
   - component: {fileID: 6497786779849603935}
   - component: {fileID: 6497786779849603931}
-  - component: {fileID: 5978796584546856425}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -569,20 +568,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc0737d09877a449a8071ad47a649a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5978796584546856425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6497786779849603905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e0ffb518743c42fb9cb642e574e39bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lightSlider: {fileID: 7219771642587715020}
-  light: {fileID: 0}
 --- !u!1 &6497786779855240458
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6497786780142319612}
   - component: {fileID: 6497786780142319611}
+  - component: {fileID: 897045443}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -752,6 +738,20 @@ MonoBehaviour:
     type: 3}
   selectSlot: {fileID: 3451401985774941446, guid: acd1b7b772a9b4665b744b2efb993169,
     type: 3}
+--- !u!114 &897045443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6497786780142319613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e947bcfd31b54859b4c24ec39955cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightSlider: {fileID: 7219771642587715020}
+  light: {fileID: 0}
 --- !u!1 &6497786780189289640
 GameObject:
   m_ObjectHideFlags: 0
