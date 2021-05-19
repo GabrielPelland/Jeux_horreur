@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class GM : MonoBehaviour
 {
@@ -23,7 +24,13 @@ public class GM : MonoBehaviour
     public float secondesIntensityLight = 20f;
 
 	public bool lightOpen = false;
+	public Canvas DeadScreen;
 
+	public void EndScreen()
+    {
+		DeadScreen.enabled = true;
+		DeadScreen.GetComponent<DeadScreen>().image.DOFade(1, 2.5f);
+    }
 
 	//Singleton - GameManager
 	public static GM i;

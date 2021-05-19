@@ -164,6 +164,11 @@ public class MonsterFiniteStateMachine : MonoBehaviour
         if(collision.collider.CompareTag("Player"))
         {
             Debug.Log("wutt");
+            animator.enabled = false;
+
+
+
+            this.enabled = false;
         }
     }
 
