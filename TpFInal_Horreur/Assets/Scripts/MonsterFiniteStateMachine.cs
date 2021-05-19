@@ -164,8 +164,12 @@ public class MonsterFiniteStateMachine : MonoBehaviour
         if(collision.collider.CompareTag("Player"))
         {
             Debug.Log("wutt");
-            animator.enabled = false;
-
+            agent.isStopped = true;
+            agent.enabled = false;
+            animator.SetBool("Running", false);
+            animator.SetBool("SoundAlert", true);
+            animator.Play("SoundAlert");
+            GM.i.EndScreen();
 
 
             this.enabled = false;
