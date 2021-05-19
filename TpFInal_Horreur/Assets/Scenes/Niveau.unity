@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2035111234}
-  m_IndirectSpecularColor: {r: 111.91012, g: 143.18456, b: 195.0516, a: 1}
+  m_IndirectSpecularColor: {r: 131.16855, g: 162.52502, b: 215.10977, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1205,10 +1205,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -3360,10 +3370,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -3455,10 +3475,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -3672,10 +3702,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -4172,10 +4207,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -5722,10 +5767,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 399.99997
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LightUnit
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3599.9998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -6042,10 +6102,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -7194,10 +7264,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -7818,10 +7898,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -8598,10 +8688,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -11205,10 +11305,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -11580,10 +11690,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -12494,10 +12614,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -13064,10 +13194,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -13692,10 +13832,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -14257,10 +14407,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -15077,10 +15237,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -15331,10 +15501,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -19372,10 +19552,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -19861,10 +20051,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -20031,10 +20231,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -20462,10 +20672,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -21156,10 +21376,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -21853,10 +22083,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -23268,10 +23508,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -23748,10 +23998,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -24849,10 +25109,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -25579,10 +25849,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -26800,10 +27080,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -27045,10 +27335,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_Range
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 14400
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -27338,12 +27643,12 @@ PrefabInstance:
     - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_LuxAtDistance
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_ShadowNearPlane
-      value: 0.16
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
         type: 3}
@@ -27358,7 +27663,7 @@ PrefabInstance:
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 1600
+      value: 3600
       objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
@@ -31370,10 +31675,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -33685,10 +34000,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -36804,10 +37124,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -36899,10 +37229,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -37259,10 +37599,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -37354,10 +37699,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -38254,10 +38609,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_Range
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 14400
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -42286,10 +42656,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -43572,10 +43952,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -44005,10 +44395,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -44796,10 +45196,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -45412,10 +45822,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -46560,10 +46980,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -48606,10 +49036,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -49280,10 +49720,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -49860,10 +50310,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -50440,10 +50900,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -50697,10 +51167,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -53763,10 +54243,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -53858,10 +54348,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -54908,10 +55408,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -55003,10 +55513,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -55923,10 +56443,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -56468,10 +56998,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -61733,10 +62273,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -62186,10 +62736,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -65012,10 +65572,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -65107,10 +65677,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -69176,10 +69756,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -71197,10 +71787,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -72830,10 +73430,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -74040,10 +74650,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -74135,10 +74755,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -77144,10 +77774,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -78799,10 +79439,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -79745,10 +80395,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -80375,10 +81035,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_eb_sconce_light_01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8312210599591400642, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_Intensity
-      value: 23.873241
+      value: 3600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795593601442464880dd60170924d48, type: 3}
@@ -87673,7 +88343,7 @@ PrefabInstance:
     - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
         type: 3}
       propertyPath: m_ShadowNearPlane
-      value: 0.16
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 6825458452774083001, guid: 8795593601442464880dd60170924d48,
         type: 3}
