@@ -38,7 +38,7 @@ public class ItemLight : MonoBehaviour
     public void LightReset()
     {
         //Envoye du GameManager
-        startTimeLight = 60;
+        startTimeLight = 120;
 
         //Default start time
         currentTimeLight = startTimeLight;
@@ -48,7 +48,7 @@ public class ItemLight : MonoBehaviour
         lightSlider.value = startTimeLight;
 
         //Calcul intensite lumiere
-        startIntensityLight = 6000;
+        startIntensityLight = 8000;
 
         secondeIntensityLight = 30;
         subSecondeIntensityLight = startIntensityLight / secondeIntensityLight;
@@ -59,6 +59,7 @@ public class ItemLight : MonoBehaviour
     {
         print("RESET LIGHT");
         currentTimeLight = startTimeLight;
+        LightReset();
     }
 
     //Sur update
