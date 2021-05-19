@@ -37,6 +37,7 @@ public class ItemInventory : MonoBehaviour
     void GenerateObject()
     {
         itemModel = GameObject.Instantiate(itemObject.itemModel);
+        itemModel.transform.position = this.transform.position; 
         itemModel.transform.parent = this.transform;
     }
 

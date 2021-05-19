@@ -38,7 +38,7 @@ public class ItemLight : MonoBehaviour
     public void LightReset()
     {
         //Envoye du GameManager
-        startTimeLight = GM.i.timeLight;
+        startTimeLight = 60;
 
         //Default start time
         currentTimeLight = startTimeLight;
@@ -48,9 +48,9 @@ public class ItemLight : MonoBehaviour
         lightSlider.value = startTimeLight;
 
         //Calcul intensite lumiere
-        startIntensityLight = (GM.i.startIntensityLight * GM.i.maxIntensityLight / GM.i.startIntensityLight);
+        startIntensityLight = 4000;
 
-        secondeIntensityLight = GM.i.secondesIntensityLight;
+        secondeIntensityLight = 30;
         subSecondeIntensityLight = startIntensityLight / secondeIntensityLight;
     }
 
@@ -65,12 +65,13 @@ public class ItemLight : MonoBehaviour
     void Update()
     {
         //Decompte temps
-        if (GM.i.lightOpen == true)
+         if (lightControl != null)
         {
             currentTimeLight = currentTimeLight - Time.deltaTime;
             SetLightSlider(currentTimeLight);
             SetLightIntensity();
         }
+
     }
 
     //Afficher slider lumiere
@@ -84,37 +85,23 @@ public class ItemLight : MonoBehaviour
     {
         if (lightControl != null)
         {
-            if (GM.i.lightOpen == true)
-            {   
-                
-                //Avant certain temps
-                if (currentTimeLight >= secondeIntensityLight)
-                {
-                    lightControl.intensity = startIntensityLight;
-                    print(lightControl.intensity);
-                    print("normal");
-                }
-                //Decroissance progressive 
-                else if (currentTimeLight < secondeIntensityLight)
-                {
-                    tempsEcoule = tempsEcoule + Time.deltaTime;
-                    lightControl.intensity = startIntensityLight - (subSecondeIntensityLight * tempsEcoule);
-                    print(lightControl.intensity);
-                    print("baisser");
-                }  
-                //Fin du temps
-                else if (currentTimeLight == 0)
-                {
-                    lightControl.intensity = 0;
-                    //FIN DU JEU (TP FINAL)
-                    print(lightControl.intensity);
-                }
-         
+            //Avant certain temps
+            if (currentTimeLight >= secondeIntensityLight)
+            {
+                lightControl.intensity = startIntensityLight;
             }
-            else if (GM.i.lightOpen == false)
+            //Decroissance progressive 
+            else if (currentTimeLight < secondeIntensityLight)
+            {
+                tempsEcoule = tempsEcoule + Time.deltaTime;
+                lightControl.intensity = startIntensityLight - (subSecondeIntensityLight * tempsEcoule);
+            }  
+            //Fin du temps
+            else if (currentTimeLight == 0)
             {
                 lightControl.intensity = 0;
             }
+            
         }
     }
 }

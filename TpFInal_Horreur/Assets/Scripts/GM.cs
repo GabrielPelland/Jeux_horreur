@@ -17,13 +17,7 @@ public class GM : MonoBehaviour
 	public int nbSlot;
 	public int tailleInventaire = 1000;
 
-	//Light
-	public float timeLight = 60f;
-    public float startIntensityLight = 100f;
-    public float maxIntensityLight = 50f;
-    public float secondesIntensityLight = 20f;
 
-	public bool lightOpen = false;
 	public Canvas DeadScreen;
 	public Camera cam;
 

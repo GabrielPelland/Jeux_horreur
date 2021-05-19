@@ -18,6 +18,10 @@ public class Inventory : MonoBehaviour
     private GameObject slotCenter;
     private GameObject objectHolder;
 
+    private GameObject instancePosition;
+    private GameObject cameraPosition;
+    private GameObject instanceItem;
+
     int currentItemId;
 
     private void Start()
@@ -25,15 +29,17 @@ public class Inventory : MonoBehaviour
         inventoryItem = new GameObject[GM.i.nbSlot];
         inventorySlot = new GameObject[GM.i.nbSlot];
         objectHolder = GameObject.Find("ObjectPosition");
+        instancePosition = GameObject.Find("InstancePosition");
+        cameraPosition = GameObject.Find("CameraPosition");
+        slotCenter = GameObject.Find("Slots");
+
         isFull = new bool[GM.i.nbSlot];
 
         for (int i = 0; i < isFull.Length; i++)
         {
             isFull[i] = false;
         }
-
-        slotCenter = GameObject.Find("Slots");
-
+        
         CreateInventory();
     }
 
@@ -73,9 +79,7 @@ public class Inventory : MonoBehaviour
             {
                 keyIndexSlot = (i - 1);
                 keySelectSlot = i;
-
             }
-
 
             if (Input.GetKeyDown((keySelectSlot).ToString()))
             {
@@ -89,16 +93,17 @@ public class Inventory : MonoBehaviour
                 selectSlotSprite.transform.position = inventorySlot[keyIndexSlot].transform.position;
                 selectSlotSprite.transform.parent = inventorySlot[keyIndexSlot].transform.GetChild(0);
 
-                
-
                 InHandItem(keyIndexSlot);
             }
             else if (Input.GetKey(KeyCode.E))
             {
                 UseItem(keyIndexSlot);
             }
+            else if (Input.GetKey(KeyCode.Q))
+            {
+                DropItem(keyIndexSlot);
+            }
         }
-
     }
 
     void UseItem (int selectedSlot)
@@ -113,11 +118,11 @@ public class Inventory : MonoBehaviour
                     print("Cle");
                     break;
                 case 2:
+                    GetComponent<ItemLight>().ResetTimeLight();
                     print("Batterie");
                     break;
                 case 3:
                     GetComponent<ItemLight>().FindLight();
-                    GM.i.lightOpen = true;
                     break;
                 case 4:
                     print("Carte");
@@ -126,7 +131,21 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    void DropItem (int selectedSlot)
+    {
+        if (inventoryItem[selectedSlot] != null)
+        {
+            instanceItem = GameObject.Instantiate(inventoryItem[selectedSlot]);
+            instanceItem.transform.position = instancePosition.transform.position;
+            instanceItem.transform.rotation = cameraPosition.transform.rotation;
 
+            inventoryItem[selectedSlot] = null;
+            isFull[selectedSlot] = false;
+            DestroyHandObject();
+            Destroy(this.transform.GetChild(0).GetChild(selectedSlot).GetChild(1).gameObject);
+        }
+
+    }
     void InHandItem(int selectedSlot)
     {
         if (isFull[selectedSlot] == true)
