@@ -89,6 +89,7 @@ public class ItemLight : MonoBehaviour
             if (currentTimeLight >= secondeIntensityLight)
             {
                 lightControl.intensity = startIntensityLight;
+                print(lightControl.intensity);
             }
             //Decroissance progressive 
             else if (currentTimeLight < secondeIntensityLight)
