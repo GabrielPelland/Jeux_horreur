@@ -159,6 +159,14 @@ public class MonsterFiniteStateMachine : MonoBehaviour
 
     }
 
+    public void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.CompareTag("Player"))
+        {
+            Debug.Log("wutt");
+        }
+    }
+
     public void CheckForVisible()
     {
         if (fov.visibleTargets.Count != 0)
