@@ -21,6 +21,7 @@ public class GM : MonoBehaviour
 	public Canvas DeadScreen;
 	public Camera cam;
 
+	private bool stressed = false;
 	public void EndScreen()
     {
 		DeadScreen.enabled = true;
@@ -32,8 +33,22 @@ public class GM : MonoBehaviour
 
 	public void SetStress()
     {
+		if (!stressed) {
+			cam.DOFieldOfView(110, 0.7f);
+			stressed = true;
+			AudioManager.i.scaryEncounter.Play();
+		}
 
+		
     }
+	public void DiludeStress()
+	{
+	cam.DOFieldOfView(60, 2f);
+	stressed = false;
+		
+
+
+	}
 
 	IEnumerator RestartScene()
     {
