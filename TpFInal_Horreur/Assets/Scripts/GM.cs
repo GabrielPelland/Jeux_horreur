@@ -34,6 +34,13 @@ public class GM : MonoBehaviour
 		StartCoroutine(RestartScene());
     }
 
+	public int fovChange;
+
+	public void SetStress()
+    {
+
+    }
+
 	IEnumerator RestartScene()
     {
 		yield return new WaitForSeconds(4f);
