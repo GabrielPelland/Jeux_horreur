@@ -113,11 +113,20 @@ public class Inventory : MonoBehaviour
                     print("Cle");
                     break;
                 case 2:
-                    print("Batterie");
+                    GetComponent<ItemLight>().ResetTimeLight();
                     break;
                 case 3:
                     GetComponent<ItemLight>().FindLight();
-                    GM.i.lightOpen = true;
+                    
+                    if (GM.i.lightOpen == true)
+                    {
+                        GM.i.lightOpen = false;
+                    }
+                    else if (GM.i.lightOpen == false)
+                    {
+                        GM.i.lightOpen = true;
+                    }
+
                     break;
                 case 4:
                     print("Carte");
