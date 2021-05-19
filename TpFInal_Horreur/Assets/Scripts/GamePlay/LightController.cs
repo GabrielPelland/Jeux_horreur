@@ -25,11 +25,16 @@ public class LightController : MonoBehaviour
     float tempsEcoule = 0;
 
 
+    void Start()
+    {
+        TimeLightParms();
+    }
+
     //GameManager - Parametres lumieres et temps
-    public void TimeLightParms(float parmTimeLight, float parmIntensityLight, float parmMaxIntensityLight, float parmSecondesIntencityLight)
+    public void TimeLightParms()
     {
         //Envoye du GameManager
-        startTimeLight = parmTimeLight;
+        startTimeLight = GM.i.timeLight;
 
         //Default start time
         currentTimeLight = startTimeLight;
@@ -39,9 +44,9 @@ public class LightController : MonoBehaviour
         lightSlider.value = startTimeLight;
 
         //Calcul intensite lumiere
-        startIntensityLight = (parmIntensityLight * parmMaxIntensityLight / parmIntensityLight);
+        startIntensityLight = (GM.i.startIntensityLight * GM.i.maxIntensityLight / GM.i.startIntensityLight);
 
-        secondeIntensityLight = parmSecondesIntencityLight;
+        secondeIntensityLight = GM.i.secondesIntensityLight;
         subSecondeIntensityLight = startIntensityLight / secondeIntensityLight;
     }
 

@@ -15,6 +15,12 @@ public class GM : MonoBehaviour
 	//Inventaire
 	public int nbSlot;
 
+	//Light
+	public float timeLight = 60f;
+    public float startIntensityLight = 100f;
+    public float maxIntensityLight = 50f;
+    public float secondesIntensityLight = 20f;
+
 
 	//Singleton - GameManager
 	public static GM i;
@@ -38,5 +44,7 @@ public class GM : MonoBehaviour
 		sensY = 100f;
 		multiplier = 0.01f;
 		nbSlot = 6;
+
+
 	}
 }
