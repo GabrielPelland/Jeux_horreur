@@ -100,7 +100,6 @@ public class ItemLight : MonoBehaviour
             else if (currentTimeLight == 0)
             {
                 lightControl.intensity = 0;
-                //FIN DU JEU (TP FINAL)
             }
             
         }
