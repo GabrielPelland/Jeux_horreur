@@ -76,7 +76,6 @@ public class Inventory : MonoBehaviour
 
             }
 
-
             if (Input.GetKeyDown((keySelectSlot).ToString()))
             {
                 DestroyHandObject();
@@ -88,8 +87,6 @@ public class Inventory : MonoBehaviour
                 selectSlotSprite = GameObject.Instantiate(selectSlot);
                 selectSlotSprite.transform.position = inventorySlot[keyIndexSlot].transform.position;
                 selectSlotSprite.transform.parent = inventorySlot[keyIndexSlot].transform.GetChild(0);
-
-                
 
                 InHandItem(keyIndexSlot);
             }
@@ -114,19 +111,10 @@ public class Inventory : MonoBehaviour
                     break;
                 case 2:
                     GetComponent<ItemLight>().ResetTimeLight();
+                    print("Batterie");
                     break;
                 case 3:
                     GetComponent<ItemLight>().FindLight();
-                    
-                    if (GM.i.lightOpen == true)
-                    {
-                        GM.i.lightOpen = false;
-                    }
-                    else if (GM.i.lightOpen == false)
-                    {
-                        GM.i.lightOpen = true;
-                    }
-
                     break;
                 case 4:
                     print("Carte");
@@ -134,7 +122,6 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-
 
     void InHandItem(int selectedSlot)
     {
