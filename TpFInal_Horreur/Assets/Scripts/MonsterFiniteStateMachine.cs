@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class MonsterFiniteStateMachine : MonoBehaviour
 {
     private NavMeshAgent agent;
-    private PlayerInfo player;
+    public PlayerInfo player;
     private Animator animator;
 
     public AmbushPoints ambushPoints;
@@ -18,19 +18,24 @@ public class MonsterFiniteStateMachine : MonoBehaviour
 
     public Vector3 soundDestination;
 
+    private FieldOfView fov;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
+        fov = GetComponent<FieldOfView>();
         state = State.PrepareForNextAmbush;
     }
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInfo>();
+  
 
 
     }
+
+
 
     public void SoundTriggered(Vector3 soundPos)
     {
@@ -54,14 +59,14 @@ public class MonsterFiniteStateMachine : MonoBehaviour
         {
             case State.ChasePlayer:
 
+                animator.SetBool("Running", true);
                 agent.SetDestination(player.transform.position);
+
                 break;
 
 
             //Currently not moving, waiting for the player to trigger a reaction
             case State.WaitForAmbush:
-
-
 
                 if (ambushPoints.points[ambushPoints.currentID].triggered)
                 {
@@ -146,8 +151,30 @@ public class MonsterFiniteStateMachine : MonoBehaviour
                 }
 
                 break;
+
+            
         }
 
+     
+
+    }
+
+    public void CheckForVisible()
+    {
+        if (fov.visibleTargets.Count != 0)
+        {
+            if (state != State.ChasePlayer) interruptedState = state;
+            UpdateState(State.ChasePlayer);
+            agent.SetDestination(player.transform.position);
+        }
+
+        if (state == State.ChasePlayer)
+        {
+            if (fov.visibleTargets.Count == 0)
+            {
+                UpdateState(State.ResumeInterruptedAction);
+            }
+        }
     }
 
     public IEnumerator TimeSoundAlert()
@@ -167,8 +194,6 @@ public class MonsterFiniteStateMachine : MonoBehaviour
         UpdateState(State.ChaseSound);
         agent.isStopped = false;
         agent.SetDestination(soundDestination);
-
-
     }
 
 

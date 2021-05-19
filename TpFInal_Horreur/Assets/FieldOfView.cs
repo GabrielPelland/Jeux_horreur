@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class FieldOfView : MonoBehaviour
 {
-
+	MonsterFiniteStateMachine monster;
 	public float viewRadius;
 	[Range(0, 360)]
 	public float viewAngle;
@@ -16,7 +16,8 @@ public class FieldOfView : MonoBehaviour
 
 	void Start()
 	{
-		StartCoroutine("FindTargetsWithDelay", .2f);
+		StartCoroutine("FindTargetsWithDelay", 0.2f);
+		monster = GetComponentInChildren<MonsterFiniteStateMachine>();
 	}
 
 
@@ -45,9 +46,13 @@ public class FieldOfView : MonoBehaviour
 				if (!Physics.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask))
 				{
 					visibleTargets.Add(target);
+					monster.CheckForVisible();
+
 				}
 			}
 		}
+
+	
 	}
 
 
