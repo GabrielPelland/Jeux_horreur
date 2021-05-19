@@ -25,12 +25,13 @@ public class GM : MonoBehaviour
 
 	public bool lightOpen = false;
 	public Canvas DeadScreen;
+	public Camera cam;
 
 	public void EndScreen()
     {
 		DeadScreen.enabled = true;
 		DeadScreen.GetComponent<DeadScreen>().image.DOFade(1, 2.5f);
-		
+		StartCoroutine(RestartScene());
     }
 
 	IEnumerator RestartScene()
