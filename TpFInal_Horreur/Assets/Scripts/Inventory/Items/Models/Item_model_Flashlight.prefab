@@ -45,8 +45,8 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0
-  m_Range: 100
-  m_SpotAngle: 179
+  m_Range: 101.05
+  m_SpotAngle: 118
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -86,7 +86,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
-  m_BounceIntensity: 200
+  m_BounceIntensity: 100
   m_ColorTemperature: 5719
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -115,10 +115,10 @@ MonoBehaviour:
   m_AreaLightShape: 0
   m_Intensity: 0
   m_EnableSpotReflector: 0
-  m_LuxAtDistance: 3
-  m_InnerSpotPercent: 27.5
+  m_LuxAtDistance: 10
+  m_InnerSpotPercent: 83.9
   m_LightDimmer: 1
-  m_VolumetricDimmer: 9.12
+  m_VolumetricDimmer: 10.71
   m_LightUnit: 2
   m_FadeDistance: 10000
   m_AffectDiffuse: 1
