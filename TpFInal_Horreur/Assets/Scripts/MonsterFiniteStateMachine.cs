@@ -35,7 +35,7 @@ public class MonsterFiniteStateMachine : MonoBehaviour
 
     }
 
-
+    bool firstTimeDetected = true;
 
     public void SoundTriggered(Vector3 soundPos)
     {
@@ -52,15 +52,62 @@ public class MonsterFiniteStateMachine : MonoBehaviour
 
     }
 
+    public bool StartChasing = false;
+
+    public IEnumerator StopChasing()
+    {
+        yield return new WaitForSeconds(Random.Range(8, 12));
+        StartChasing = false;
+
+        if (firstTimeDetected)
+        {
+            GM.i.DiludeStress();
+            agent.speed = 4.5f;
+            firstTimeDetected = false;
+        }
+        
+
+        if (state == State.ChasePlayer)
+        {
+           
+            AmbushPoint ambush = ambushPoints.points[ambushPoints.currentID];
+            agent.SetDestination(ambush.secondRunPoint.transform.position);
+            UpdateState(State.Ambushing);
+          
+
+        }
+
+        StopAllCoroutines();
+    }
+
     private void Update()
     {
 
         switch (state)
         {
             case State.ChasePlayer:
-
-                animator.SetBool("Running", true);
                 agent.SetDestination(player.transform.position);
+                if (!StartChasing)
+                {
+                    if (firstTimeDetected)
+                    {
+                        GM.i.SetStress();
+                        agent.speed = 3.7f;
+                    } else
+                    {
+                        AudioManager.i.scaryENcouterFinal.Play();
+                        agent.speed = 9f;
+                    }
+
+                    
+                    animator.SetBool("Running", true);        
+                    StartChasing = true;
+                    StartCoroutine(StopChasing());
+                    agent.enabled = false;
+                } else
+                {
+                    agent.enabled = true;
+                }
 
                 break;
 
@@ -178,18 +225,21 @@ public class MonsterFiniteStateMachine : MonoBehaviour
 
     public void CheckForVisible()
     {
-        if (fov.visibleTargets.Count != 0)
+        if (!(state == State.ChasePlayer))
         {
-            if (state != State.ChasePlayer) interruptedState = state;
-            UpdateState(State.ChasePlayer);
-            agent.SetDestination(player.transform.position);
-        }
-
-        if (state == State.ChasePlayer)
-        {
-            if (fov.visibleTargets.Count == 0)
+            if (fov.visibleTargets.Count != 0)
             {
-                UpdateState(State.ResumeInterruptedAction);
+                if (state != State.ChasePlayer) interruptedState = state;
+                UpdateState(State.ChasePlayer);
+                agent.SetDestination(player.transform.position);
+            }
+
+            if (state == State.ChasePlayer)
+            {
+                if (fov.visibleTargets.Count == 0)
+                {
+                    UpdateState(State.ResumeInterruptedAction);
+                }
             }
         }
     }
@@ -202,7 +252,7 @@ public class MonsterFiniteStateMachine : MonoBehaviour
         }
         while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
         {
-            print(animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+         
             yield return new WaitForSeconds(0.3f);
         }
 
