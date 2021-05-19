@@ -48,7 +48,7 @@ public class ItemLight : MonoBehaviour
         lightSlider.value = startTimeLight;
 
         //Calcul intensite lumiere
-        startIntensityLight = 4000;
+        startIntensityLight = 6000;
 
         secondeIntensityLight = 30;
         subSecondeIntensityLight = startIntensityLight / secondeIntensityLight;

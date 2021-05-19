@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemModel: {fileID: 5684280228549100502, guid: 8c59e4ed0ce694f849a4865d28a12c7f,
     type: 3}
-  itemIcon: {fileID: 3451401985774941446, guid: 53851fe3997fa44eba4c209733d9caf6,
+  itemIcon: {fileID: 5843903542562633141, guid: bf2167a131b054ba28e6e74ef51b74a8,
     type: 3}
   itemStatut: 0
   itemType: 3
