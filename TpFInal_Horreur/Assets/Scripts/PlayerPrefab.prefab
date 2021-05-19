@@ -1103,6 +1103,8 @@ MonoBehaviour:
   secondesIntensityLight: 20
   lightOpen: 0
   DeadScreen: {fileID: 0}
+  cam: {fileID: 0}
+  fovChange: 0
 --- !u!1 &6497786780128987501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,13 +1128,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6497786780128987501}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.353, y: 0.955, z: 0.621}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6497786780626331353}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &6497786780142319613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,11 +1321,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7842002497a34e1b807de2d866c3350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notificationAttention: {fileID: 0}
-  notificationObjectif: {fileID: 0}
-  notificationMort: {fileID: 0}
-  notificationFin: {fileID: 0}
-  uiTouches: {fileID: 0}
+  notificationAttention: {fileID: 5773077007452530376, guid: e5ff327129033482795050b00ca6545b,
+    type: 3}
+  notificationObjectif: {fileID: 4805748925758867037, guid: 7682f2ab490114c1ba565a12250ea862,
+    type: 3}
+  notificationMort: {fileID: 2370162140035516776, guid: d931210f74cc3442bbec40f1dbb826f4,
+    type: 3}
+  notificationFin: {fileID: 1442889606092658532, guid: 000af781aace44db6a42f8c8cca13918,
+    type: 3}
+  uiTouches: {fileID: 6830080060553706012, guid: 992b38331f6494fe08fd67e32e63c25f,
+    type: 3}
   positionTop: {fileID: 5687136361917142666}
   positionCenter: {fileID: 3611618962726977408}
 --- !u!1 &6497786780253068787
