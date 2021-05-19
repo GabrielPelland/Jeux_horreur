@@ -48,7 +48,7 @@ public class Inventory : MonoBehaviour
 
         for (int i = 0; i < inventorySlot.Length; i++)
         {
-            slotSpace = (175 * i) - 500;
+            slotSpace = (120 * i) - 500;
 
             basicSlotSprite = GameObject.Instantiate(basicSlot);
             basicSlotSprite.transform.parent = slotCenter.transform;
@@ -86,7 +86,7 @@ public class Inventory : MonoBehaviour
                 }
 
                 selectSlotSprite = GameObject.Instantiate(selectSlot);
-                selectSlotSprite.transform.position = inventorySlot[keyIndexSlot].transform.GetChild(0).gameObject.transform.position;
+                selectSlotSprite.transform.position = inventorySlot[keyIndexSlot].transform.position;
                 selectSlotSprite.transform.parent = inventorySlot[keyIndexSlot].transform.GetChild(0);
 
                 

@@ -14,6 +14,7 @@ public class GM : MonoBehaviour
 
 	//Inventaire
 	public int nbSlot;
+	public int tailleInventaire = 1000;
 
 	//Light
 	public float timeLight = 60f;
