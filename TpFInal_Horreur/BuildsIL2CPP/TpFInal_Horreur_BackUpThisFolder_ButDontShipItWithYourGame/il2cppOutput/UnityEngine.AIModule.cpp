@@ -916,6 +916,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NavMeshAgent_set_isStopped_m3E8EA397B333
 	_il2cpp_icall_func = (NavMeshAgent_set_isStopped_m3E8EA397B333B4E93272834CC398F87CEA572F81_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AI.NavMeshAgent::set_isStopped(System.Boolean)");
 	_il2cpp_icall_func(__this, ___value0);
 }
+// System.Void UnityEngine.AI.NavMeshAgent::set_speed(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NavMeshAgent_set_speed_mE709E788BFB285190B9504F6DB3199B35B9B0D35 (NavMeshAgent_tD93BAD8854B394AA1D372193F21154E94CA84BEB * __this, float ___value0, const RuntimeMethod* method)
+{
+	typedef void (*NavMeshAgent_set_speed_mE709E788BFB285190B9504F6DB3199B35B9B0D35_ftn) (NavMeshAgent_tD93BAD8854B394AA1D372193F21154E94CA84BEB *, float);
+	static NavMeshAgent_set_speed_mE709E788BFB285190B9504F6DB3199B35B9B0D35_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (NavMeshAgent_set_speed_mE709E788BFB285190B9504F6DB3199B35B9B0D35_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AI.NavMeshAgent::set_speed(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
 // System.Boolean UnityEngine.AI.NavMeshAgent::SetDestination_Injected(UnityEngine.Vector3&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NavMeshAgent_SetDestination_Injected_m03F00018E71D91B109510C2EF1F01A3ECD84FF89 (NavMeshAgent_tD93BAD8854B394AA1D372193F21154E94CA84BEB * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___target0, const RuntimeMethod* method)
 {

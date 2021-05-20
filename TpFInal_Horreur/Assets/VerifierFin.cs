@@ -10,13 +10,14 @@ public class VerifierFin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            print("ok");
             if (GM.i.nbKeyTrack < 5)
             {
-                victory.enabled = true;
+                needKeys.gameObject.SetActive(true);
             }
             else
             {
-                needKeys.enabled = true;
+                victory.gameObject.SetActive(true);
             }
         }
     }
@@ -27,11 +28,11 @@ public class VerifierFin : MonoBehaviour
         {
             if (GM.i.nbKeyTrack < 5)
             {
-                victory.enabled = false ;
+                needKeys.gameObject.SetActive(false);
             }
             else
             {
-                needKeys.enabled = false;
+                victory.gameObject.SetActive(false);
             }
         }
     }

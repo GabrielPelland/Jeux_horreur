@@ -27363,7 +27363,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_Remove_m5E23D87996E72EB5D7B135
 // System.Boolean System.Collections.Generic.HashSet`1<System.Object>::Contains(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_Contains_m76525371D7FFA91A1B054B1C65C86969133C2CD4_gshared (HashSet_1_t725419BA457D845928B505ACE877FF46BC71E897 * __this, RuntimeObject * ___item0, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::AddComponent<System.Object>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * GameObject_AddComponent_TisRuntimeObject_mCB8164FB05F8DCF99E098ADC5E13E96FEF6FC4E9_gshared (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * GameObject_GetComponent_TisRuntimeObject_mD4382B2843BA9A61A01A8F9D7B9813D060F9C9CA_gshared (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
@@ -27866,7 +27866,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RTHandle_tEA0162F7F963913BAEDC1F970E261D0874F
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.Rendering.HighDefinition.HDAdditionalLightData>()
 inline HDAdditionalLightData_t811167BC4B5C13D1154D1DD672E1E0FF13127585 * GameObject_AddComponent_TisHDAdditionalLightData_t811167BC4B5C13D1154D1DD672E1E0FF13127585_mD659B78E89713AF0FE4ED66BF6F6A2C986836057 (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
 {
-	return ((  HDAdditionalLightData_t811167BC4B5C13D1154D1DD672E1E0FF13127585 * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared)(__this, method);
+	return ((  HDAdditionalLightData_t811167BC4B5C13D1154D1DD672E1E0FF13127585 * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_mCB8164FB05F8DCF99E098ADC5E13E96FEF6FC4E9_gshared)(__this, method);
 }
 // System.Void UnityEngine.Rendering.HighDefinition.HDAdditionalLightData::InitDefaultHDAdditionalLightData(UnityEngine.Rendering.HighDefinition.HDAdditionalLightData)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HDAdditionalLightData_InitDefaultHDAdditionalLightData_mCBE8209F6865F9F06E71F79888B1CD39BD4189E4 (HDAdditionalLightData_t811167BC4B5C13D1154D1DD672E1E0FF13127585 * ___lightData0, const RuntimeMethod* method);

@@ -149,9 +149,11 @@ public class MonsterFiniteStateMachine : MonoBehaviour
 
                 if (agent.remainingDistance < 0.1f)
                 {
+                    print("ok");
                     agent.SetDestination(ambushPoints.points[ambushPoints.currentID].transform.position);
 
                     UpdateState(State.PrepareForNextAmbush);
+                   
                 }
 
                 break;
@@ -159,8 +161,10 @@ public class MonsterFiniteStateMachine : MonoBehaviour
             //Currently walking to the next point to ambush
             case State.PrepareForNextAmbush:
 
+      
                 if (agent.remainingDistance < 0.1f)
                 {
+                    
                     agent.isStopped = true;
                     animator.SetBool("Running", false);
                     UpdateState(State.WaitForAmbush);
