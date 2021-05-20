@@ -23,7 +23,7 @@ public class GM : MonoBehaviour
 
     private void Update()
     {
-		//keytext.text = nbKeyTrack.ToString() + " / 5 Keys";
+		keytext.text = nbKeyTrack.ToString() + " / 5 Keys";
 		
     }
 
