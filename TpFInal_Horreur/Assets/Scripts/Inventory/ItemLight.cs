@@ -22,6 +22,8 @@ public class ItemLight : MonoBehaviour
     float subSecondeIntensityLight;
     float tempsEcoule = 0;
 
+    private bool lightOpen = false;
+
 
     void Start()
     {
