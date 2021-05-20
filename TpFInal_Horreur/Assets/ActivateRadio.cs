@@ -18,7 +18,7 @@ public class ActivateRadio : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            text.enabled = true;
+            text.gameObject.SetActive(true);
             canActivateRadio = true;
         }
     }
@@ -27,7 +27,7 @@ public class ActivateRadio : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            text.enabled = true;
+            text.gameObject.SetActive(false);
             canActivateRadio = false;
         }
     }
@@ -35,6 +35,13 @@ public class ActivateRadio : MonoBehaviour
     public void PlayRadio()
     {
         source.Play();
+        StartCoroutine(PlayMonsterScreamDelayed());
+    }
+
+    IEnumerator PlayMonsterScreamDelayed()
+    {
+        yield return new WaitForSeconds(Random.Range(2f, 3f));
+        GM.i.monster.PlayScream();
     }
 
     private void Update()

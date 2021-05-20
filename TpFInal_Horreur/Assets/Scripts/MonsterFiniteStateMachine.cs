@@ -206,6 +206,12 @@ public class MonsterFiniteStateMachine : MonoBehaviour
 
     }
 
+    public AudioSource screamSource;
+    public void PlayScream()
+    {
+        screamSource.Play();
+    }
+
     public void OnCollisionEnter(Collision collision)
     {
         if(collision.collider.CompareTag("Player"))

@@ -9,6 +9,8 @@ public class RandomCuesGenerator : MonoBehaviour
     public List<AudioClip>clips;
 
     private int index = 0;
+    public float interval1 = 12;
+    public float interval2 = 30;
     private void Start()
     {
         ShuffleClips();
@@ -20,7 +22,7 @@ public class RandomCuesGenerator : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(12f, 30f));
+            yield return new WaitForSeconds(Random.Range(interval1, interval2));
             source.clip = clips[index];
             source.Play();
             index++;
