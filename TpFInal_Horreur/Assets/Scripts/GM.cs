@@ -33,6 +33,7 @@ public class GM : MonoBehaviour
 	private bool stressed = false;
 	public void EndScreen()
     {
+		AudioManager.i.GameOver.Play();
 		DeadScreen.enabled = true;
 		DeadScreen.GetComponent<DeadScreen>().image.DOFade(1, 2.5f);
 		DeadScreen.GetComponent<DeadScreen>().image2.DOFade(1, 3.5f).SetDelay(1f);
