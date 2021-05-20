@@ -4,24 +4,32 @@ using UnityEngine;
 
 public class ItemInventory : MonoBehaviour
 {
+    //Variables
     public ItemObject itemObject;
     private GameObject itemModel;
     private GameObject itemHand;
     private GameObject itemIcon;
     private GameObject itemObjectHolder;
+
+    //inventory
     GameObject inventoryObject;
     Inventory inventory;
 
+    //On start
     private void Start()
     {
+        //Change item statut
         itemObject.itemStatut = ItemObject.ItemStatut.InGame;
 
         Inventaire();
+
+        //Find variables
         inventoryObject = GameObject.Find("Inventory");
         inventory = inventoryObject.GetComponent<Inventory>();
         itemObjectHolder = GameObject.Find("ObjectPosition");
     }
 
+    //Check item statut
     void Inventaire()
     {
         if (itemObject.itemStatut == ItemObject.ItemStatut.InGame)
@@ -34,6 +42,7 @@ public class ItemInventory : MonoBehaviour
         }
     }
 
+    //Generate object on ground
     void GenerateObject()
     {
         itemModel = GameObject.Instantiate(itemObject.itemModel);
@@ -41,14 +50,17 @@ public class ItemInventory : MonoBehaviour
         itemModel.transform.parent = this.transform;
     }
 
+    //Generate object in inventory
     void InventoryItem()
     {
         GameObject slotChild;
 
         for (int i = 0; i < inventory.inventoryItem.Length; i++)
         {
+            //check slot full
             if (inventory.isFull[i] == false)
             {
+                //instantiate itemIcon
                 itemIcon = GameObject.Instantiate(itemObject.itemIcon);
 
                 slotChild = inventory.inventorySlot[i].transform.GetChild(0).gameObject;
@@ -66,6 +78,7 @@ public class ItemInventory : MonoBehaviour
         Destroy(itemModel);
     }
 
+    //Instantiate object in hand
     public void InHandObject()
     {
         itemHand = GameObject.Instantiate(itemObject.itemModel);
@@ -74,6 +87,7 @@ public class ItemInventory : MonoBehaviour
         itemHand.transform.parent = itemObjectHolder.transform;
     }
     
+    //Collect item (from other player)
     public void CollectItem()
     {
         itemObject.itemStatut = ItemObject.ItemStatut.InInventory;

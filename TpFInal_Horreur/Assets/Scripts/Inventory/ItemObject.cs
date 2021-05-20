@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Create scriptable object
 [CreateAssetMenu(fileName = "ItemData", menuName = "ScriptableObjects/Items", order = 1)]
 public class ItemObject : ScriptableObject
 {
@@ -10,12 +11,14 @@ public class ItemObject : ScriptableObject
     public ItemStatut itemStatut;
     public ItemType itemType;
 
+    //Statut
     public enum ItemStatut
     {
         InGame,
         InInventory
     }
 
+    //Item type
     public enum ItemType
     {
         Cle = 1,

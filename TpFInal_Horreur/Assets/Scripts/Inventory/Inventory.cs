@@ -14,21 +14,26 @@ public class Inventory : MonoBehaviour
     [SerializeField] GameObject basicSlot;
     [SerializeField] GameObject selectSlot;
 
+    //Sprites
     private GameObject basicSlotSprite;
     private GameObject selectSlotSprite;
     private GameObject slotCenter;
     private GameObject objectHolder;
 
+    //Positions
     private GameObject instancePosition;
     private GameObject cameraPosition;
     private GameObject instanceItem;
 
+    //Selected slot
     private GameObject selectedSlotPosition;
 
+    //Item id
     int currentItemId;
 
     private void Start()
     {
+        //Assign variables
         inventoryItem = new GameObject[GM.i.nbSlot];
         inventorySlot = new GameObject[GM.i.nbSlot];
         objectHolder = GameObject.Find("ObjectPosition");
@@ -38,11 +43,13 @@ public class Inventory : MonoBehaviour
 
         isFull = new bool[GM.i.nbSlot];
 
+        //Reset Isfull
         for (int i = 0; i < isFull.Length; i++)
         {
             isFull[i] = false;
         }
-        
+
+        //Call fonction
         CreateInventory();
     }
 
@@ -51,6 +58,7 @@ public class Inventory : MonoBehaviour
         PressKey();
     }
 
+    //Create iventory with GameMaster
     void CreateInventory()
     {
         int slotSpace;
@@ -66,12 +74,14 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    //Detect if you press key for inventory
     void PressKey()
     {
         int keySelectSlot = 0;
 
         for (int i = 0; i < (inventorySlot.Length + 1); i++)
         {
+            //Check index + key press
             if (i == 0)
             {
                 keyIndexSlot = 0;
@@ -91,16 +101,19 @@ public class Inventory : MonoBehaviour
                     Destroy(selectSlotSprite);
                 }
 
+                //Selected slot
                 selectSlotSprite = GameObject.Instantiate(selectSlot);
                 selectSlotSprite.transform.position = inventorySlot[keyIndexSlot].transform.position;
                 selectSlotSprite.transform.SetParent(inventorySlot[keyIndexSlot].transform.GetChild(0));
 
                 InHandItem(keyIndexSlot);
             }
+            //Check use
             else if (Input.GetKey(KeyCode.E))
             {
                 if(GameObject.Find("Inventory_Slot_selected(Clone)") != null)
                 {
+                    //Check if there is children ( items ) in slot
                     if (GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.transform.childCount > 1)
                     {
                         UseItem();
@@ -110,28 +123,31 @@ public class Inventory : MonoBehaviour
         }
     }
 
-
+    //Use items
     void UseItem ()
     {
+        //Check if there is children
         if (GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(1) != null)
         {
+            //Find the itemInventory object
             selectedSlotPosition = GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(2).gameObject;
-            print(selectedSlotPosition);
             currentItemId = (int)selectedSlotPosition.GetComponent<ItemInventory>().itemObject.itemType;
 
+            //Check item id
             switch (currentItemId)
             {
                 case 2:
+                    //Use battery
                     GetComponent<ItemLight>().ResetTimeLight();
 
+                    //Destroy after used
                     Destroy(GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(1).gameObject);
                     Destroy(GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(2).gameObject);
                     isFull[keyIndexSlot] = false;
                     DestroyHandObject();
-                    print("Batterie");
-
                     break;
                 case 3:
+                    //Open light
                     GetComponent<ItemLight>().FindLight();
                     print("Lamp");
                     break;
@@ -139,6 +155,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    
     void InHandItem(int selectedSlot)
     {
         if (isFull[selectedSlot] == true)
@@ -146,7 +163,8 @@ public class Inventory : MonoBehaviour
             inventoryItem[selectedSlot].GetComponent<ItemInventory>().InHandObject();
         }
     }
-
+    
+    //Destroy object in hand
     void DestroyHandObject()
     {
         foreach (Transform child in objectHolder.transform) {
