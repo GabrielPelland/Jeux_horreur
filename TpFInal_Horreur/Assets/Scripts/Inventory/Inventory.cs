@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
     public GameObject[] inventoryItem;
     public GameObject[] inventorySlot;
     public bool[] isFull;
+    int keyIndexSlot = 0;
 
     //UI
     [SerializeField] GameObject basicSlot;
@@ -67,7 +68,6 @@ public class Inventory : MonoBehaviour
 
     void PressKey()
     {
-        int keyIndexSlot = 0;
         int keySelectSlot = 0;
 
         for (int i = 0; i < (inventorySlot.Length + 1); i++)
@@ -126,10 +126,10 @@ public class Inventory : MonoBehaviour
 
                     Destroy(GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(1).gameObject);
                     Destroy(GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(2).gameObject);
-
+                    isFull[keyIndexSlot] = false;
                     DestroyHandObject();
                     print("Batterie");
-                    
+
                     break;
                 case 3:
                     GetComponent<ItemLight>().FindLight();
