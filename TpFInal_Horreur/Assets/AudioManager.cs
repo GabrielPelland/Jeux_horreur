@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
 {
 	public AudioSource scaryEncounter;
 	public AudioSource scaryENcouterFinal;
+	public AudioSource GameOver;
 
 	public static AudioManager i;
 	private void Awake()
