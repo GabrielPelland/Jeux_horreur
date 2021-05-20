@@ -15,6 +15,11 @@ public class InterfaceManager : MonoBehaviour
     public GameObject positionCenter;
 
     GameObject activeUI;
+    
+    private void Start()
+    {
+        Afficher("Objectifs");
+    }
 
     public void Afficher(string nomUi)
     {
@@ -23,6 +28,8 @@ public class InterfaceManager : MonoBehaviour
             case "Attention" :
                 activeUI = GameObject.Instantiate(notificationAttention);
                 activeUI.transform.position = positionTop.transform.position;
+                activeUI.transform.parent = positionTop.transform;
+
                 Invoke("RemoveUi", 5f);
                 break;
             case "Objectif" :
