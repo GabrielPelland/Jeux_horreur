@@ -8,6 +8,7 @@ TagManager:
   - Batterie
   - Lampe
   - Carte
+  - selected
   layers:
   - Default
   - TransparentFX
