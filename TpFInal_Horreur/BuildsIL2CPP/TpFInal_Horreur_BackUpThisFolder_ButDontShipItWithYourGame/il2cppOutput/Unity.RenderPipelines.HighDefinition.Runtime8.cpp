@@ -352,7 +352,7 @@ struct IEnumerator_1_t358B28365391A8EE71EA689FF6A188FD46EE77C6;
 // System.Collections.Generic.IEqualityComparer`1<System.Int32>
 struct IEqualityComparer_1_t7B82AA0F8B96BAAA21E36DDF7A1FE4348BDDBE95;
 // System.Collections.Generic.IEqualityComparer`1<System.UInt32>
-struct IEqualityComparer_1_t666366B838E9C80B34EC9FF26AB5244EDDA804B7;
+struct IEqualityComparer_1_t8D13638D3E8C85B2BF37618A54F8C19DD8DF2523;
 // System.Collections.Generic.IList`1<UnityEngine.Rendering.VolumeParameter>
 struct IList_1_t1F722B54334A82079C23CA1E130269831D5AC5B1;
 // System.Collections.Generic.List`1<System.Int32>

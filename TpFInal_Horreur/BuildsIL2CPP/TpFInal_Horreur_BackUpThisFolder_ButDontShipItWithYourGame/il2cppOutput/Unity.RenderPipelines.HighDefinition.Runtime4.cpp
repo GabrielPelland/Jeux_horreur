@@ -42218,7 +42218,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Add_mFFA3A9502969DEAF58D291727D44
 // System.Void System.Collections.Generic.List`1<UnityEngine.Rendering.HighDefinition.CameraPositionSettings>::Add(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Add_mDD76F2FE2FA55F9C1A9D0B6C761AB9F3C02B5CFA_gshared (List_1_t2B687A567D9076A41AA830287802DE29E9576636 * __this, CameraPositionSettings_t8F3435639743682B9517951BA05C19F6BC16ED9A  ___item0, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::AddComponent<System.Object>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * GameObject_AddComponent_TisRuntimeObject_mCB8164FB05F8DCF99E098ADC5E13E96FEF6FC4E9_gshared (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
 
 // System.Void UnityEngine.Rendering.HighDefinition.HDRenderPipeline/<>c::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mBEA93E76FCC4AC26331707773FD13D026C75E2D5 (U3CU3Ec_tFFEE0526414AB9A4A212E7566BADE34B1A2F6FA7 * __this, const RuntimeMethod* method);
@@ -42822,14 +42822,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject__ctor_mBB454E679AD9CF0B84D360
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.Camera>()
 inline Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * GameObject_AddComponent_TisCamera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34_m7DF3B4DB4CA60855860B6760DBA2B1AE5883D20F (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
 {
-	return ((  Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared)(__this, method);
+	return ((  Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_mCB8164FB05F8DCF99E098ADC5E13E96FEF6FC4E9_gshared)(__this, method);
 }
 // System.Void UnityEngine.Camera::set_cameraType(UnityEngine.CameraType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_set_cameraType_mC9875253122169F99310AE15F095B915669561D8 (Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * __this, int32_t ___value0, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.Rendering.HighDefinition.HDAdditionalCameraData>()
 inline HDAdditionalCameraData_t69EF39BF5E00ABA04B0C17381C5C5AD8ED1488CD * GameObject_AddComponent_TisHDAdditionalCameraData_t69EF39BF5E00ABA04B0C17381C5C5AD8ED1488CD_mA6FB05BD47F111355F938E52C812C1EEC6F16A72 (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
 {
-	return ((  HDAdditionalCameraData_t69EF39BF5E00ABA04B0C17381C5C5AD8ED1488CD * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared)(__this, method);
+	return ((  HDAdditionalCameraData_t69EF39BF5E00ABA04B0C17381C5C5AD8ED1488CD * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_mCB8164FB05F8DCF99E098ADC5E13E96FEF6FC4E9_gshared)(__this, method);
 }
 // System.Boolean UnityEngine.SystemInfo::get_graphicsUVStartsAtTop()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SystemInfo_get_graphicsUVStartsAtTop_m153E76BA4699E17C2C4BEFF6039056A3BED88C5F (const RuntimeMethod* method);

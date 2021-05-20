@@ -1457,6 +1457,7 @@ IL2CPP_EXTERN_C const uint32_t TaskFactory_CheckCreationOptions_m03F3C7D571E26A6
 IL2CPP_EXTERN_C const uint32_t TaskFactory_CheckFromAsyncOptions_mE2DF3772379C6577D30BF685E85B55B79C090ED8_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TaskFactory_CheckMultiTaskContinuationOptions_mB15FB0D6FD62C8A4AD85751B8605B57420B99640_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TaskFactory_CommonCWAnyLogic_m49CC1C06031409C5D34990993262A531609D9565_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t TaskFactory_StartNew_mD172AE1E05790ED35F406EE7A4C0B8AAFE5A267D_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TaskNode_System_Threading_IThreadPoolWorkItem_ExecuteWorkItem_m2A1D7178C0607E8D486EAE95F78CAC52DA778E97_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TaskNode__ctor_m72EC4C4F9BA296764F5694BF5D41153341D32E0C_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TaskSchedulerAwaitTaskContinuation_Run_m12898EF0B89FD0CA5D26DC91995257B334E937BA_MetadataUsageId;
@@ -1539,6 +1540,7 @@ IL2CPP_EXTERN_C const uint32_t Task_get_CapturedContext_m0BF410316395E27B89095D1
 IL2CPP_EXTERN_C const uint32_t Task_get_CompletedEvent_mE8A47E33273E4C45D6D818F4308903D34C5683DD_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Task_get_CompletedTask_mBB0764E7FDE04E900FFBE5B1BE6B815193681E86_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Task_get_CurrentStackGuard_m74FB437E43F89B8BDCB272A7257024F586421F11_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t Task_get_Factory_m31F1298E08390A4AD46B85AB060F1FAD4CE12112_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Task_get_Id_mA2A4DA7A476AFEF6FF4B4F29BF1F98D0481E28AD_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Task_get_InternalCurrent_m6BD4F17F5DAF5AC20BD6051A854D0BD702025892_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Task_get_InternalCurrent_m6BD4F17F5DAF5AC20BD6051A854D0BD702025892mscorlib19_MetadataUsageId;
@@ -5849,6 +5851,22 @@ public:
 		___m_task_0 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___m_task_0), (void*)value);
 	}
+};
+
+
+// System.Runtime.CompilerServices.YieldAwaitable
+struct  YieldAwaitable_t5A938EAA492F9B8ABA2EEFF16C7A83EA606B9911 
+{
+public:
+	union
+	{
+		struct
+		{
+		};
+		uint8_t YieldAwaitable_t5A938EAA492F9B8ABA2EEFF16C7A83EA606B9911__padding[1];
+	};
+
+public:
 };
 
 
@@ -21998,6 +22016,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TaskScheduler_t966F2798F198FA90A0DA8EFC92BAC0
 		return L_0;
 	}
 }
+// System.Threading.Tasks.TaskFactory System.Threading.Tasks.Task::get_Factory()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TaskFactory_tF3C6D983390ACFB40B4979E225368F78006D6155 * Task_get_Factory_m31F1298E08390A4AD46B85AB060F1FAD4CE12112 (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Task_get_Factory_m31F1298E08390A4AD46B85AB060F1FAD4CE12112_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2_il2cpp_TypeInfo_var);
+		TaskFactory_tF3C6D983390ACFB40B4979E225368F78006D6155 * L_0 = ((Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2_StaticFields*)il2cpp_codegen_static_fields_for(Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2_il2cpp_TypeInfo_var))->get_s_factory_3();
+		return L_0;
+	}
+}
 // System.Threading.Tasks.Task System.Threading.Tasks.Task::get_CompletedTask()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * Task_get_CompletedTask_mBB0764E7FDE04E900FFBE5B1BE6B815193681E86 (const RuntimeMethod* method)
 {
@@ -24507,6 +24540,17 @@ IL_0076:
 IL_0087:
 	{
 		return;
+	}
+}
+// System.Runtime.CompilerServices.YieldAwaitable System.Threading.Tasks.Task::Yield()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR YieldAwaitable_t5A938EAA492F9B8ABA2EEFF16C7A83EA606B9911  Task_Yield_mDE6B88BA380C1FF97CD4C8579DD323E328C0FE71 (const RuntimeMethod* method)
+{
+	YieldAwaitable_t5A938EAA492F9B8ABA2EEFF16C7A83EA606B9911  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(YieldAwaitable_t5A938EAA492F9B8ABA2EEFF16C7A83EA606B9911 ));
+		YieldAwaitable_t5A938EAA492F9B8ABA2EEFF16C7A83EA606B9911  L_0 = V_0;
+		return L_0;
 	}
 }
 // System.Void System.Threading.Tasks.Task::Wait()
@@ -28846,6 +28890,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskFactory_CheckCreationOptions_m03F3C7
 IL_0011:
 	{
 		return;
+	}
+}
+// System.Threading.Tasks.Task System.Threading.Tasks.TaskFactory::StartNew(System.Action,System.Threading.CancellationToken,System.Threading.Tasks.TaskCreationOptions,System.Threading.Tasks.TaskScheduler)
+IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * TaskFactory_StartNew_mD172AE1E05790ED35F406EE7A4C0B8AAFE5A267D (TaskFactory_tF3C6D983390ACFB40B4979E225368F78006D6155 * __this, Action_t591D2A86165F896B4B800BB5C25CE18672A55579 * ___action0, CancellationToken_t9E956952F7F20908F2AE72EDF36D97E6C7DB63AB  ___cancellationToken1, int32_t ___creationOptions2, TaskScheduler_t966F2798F198FA90A0DA8EFC92BAC08297793114 * ___scheduler3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TaskFactory_StartNew_mD172AE1E05790ED35F406EE7A4C0B8AAFE5A267D_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		V_0 = 1;
+		int32_t L_0 = ___creationOptions2;
+		IL2CPP_RUNTIME_CLASS_INIT(Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2_il2cpp_TypeInfo_var);
+		Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * L_1 = Task_InternalCurrentIfAttached_mA6A2C11F69612C4A960BC1FC6BD4E4D181D26A3B(L_0, /*hidden argument*/NULL);
+		Action_t591D2A86165F896B4B800BB5C25CE18672A55579 * L_2 = ___action0;
+		CancellationToken_t9E956952F7F20908F2AE72EDF36D97E6C7DB63AB  L_3 = ___cancellationToken1;
+		TaskScheduler_t966F2798F198FA90A0DA8EFC92BAC08297793114 * L_4 = ___scheduler3;
+		int32_t L_5 = ___creationOptions2;
+		Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * L_6 = Task_InternalStartNew_mC0053D3F586953AC3989875B67F9D60947C68BEC(L_1, L_2, NULL, L_3, L_4, L_5, 0, (int32_t*)(&V_0), /*hidden argument*/NULL);
+		return L_6;
 	}
 }
 // System.Void System.Threading.Tasks.TaskFactory::CheckFromAsyncOptions(System.Threading.Tasks.TaskCreationOptions,System.Boolean)

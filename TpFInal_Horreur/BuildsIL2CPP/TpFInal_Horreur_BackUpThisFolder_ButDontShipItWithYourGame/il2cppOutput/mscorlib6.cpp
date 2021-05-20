@@ -1539,6 +1539,7 @@ IL2CPP_EXTERN_C const uint32_t Exception__ctor_mBFF5996A1B65FCEEE0054A95A652BA3D
 IL2CPP_EXTERN_C const uint32_t Exception_get_Data_m08A7AC2DCA409CA9C7830EF72AC4C60C9EA8947D_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Exception_get_Message_m4315B19A04019652708F20C1B855805157F23CFD_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Exception_get_Source_mF1C5DE7EDD1567C4ACE302CFD82AC336504070BB_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t Exception_get_TargetSite_m8EEF23C6BD91447A8DC7CA686737D1E1C9FC834B_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t ExecutionEngineException__ctor_m0F3956D4F5C1C6B86BF8553E5A2609C277A704BF_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t FieldAccessException__ctor_mD94509B3F2F26A43BF0A6FB70F729FEEFBFE767D_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t FormatException__ctor_m6DAD3E32EE0445420B4893EA683425AC3441609B_MetadataUsageId;
@@ -30239,6 +30240,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Exception_t * Exception_get_InnerException_mC
 		return L_0;
 	}
 }
+// System.Reflection.MethodBase System.Exception::get_TargetSite()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodBase_t * Exception_get_TargetSite_m8EEF23C6BD91447A8DC7CA686737D1E1C9FC834B (Exception_t * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Exception_get_TargetSite_m8EEF23C6BD91447A8DC7CA686737D1E1C9FC834B_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	StackTrace_tD5D45826A379D8DF0CFB2CA206D992EE718C7E99 * V_0 = NULL;
+	{
+		StackTrace_tD5D45826A379D8DF0CFB2CA206D992EE718C7E99 * L_0 = (StackTrace_tD5D45826A379D8DF0CFB2CA206D992EE718C7E99 *)il2cpp_codegen_object_new(StackTrace_tD5D45826A379D8DF0CFB2CA206D992EE718C7E99_il2cpp_TypeInfo_var);
+		StackTrace__ctor_m3D57C02A24F1CCFD03425E2C4697A6347EB90408(L_0, __this, (bool)1, /*hidden argument*/NULL);
+		V_0 = L_0;
+		StackTrace_tD5D45826A379D8DF0CFB2CA206D992EE718C7E99 * L_1 = V_0;
+		NullCheck(L_1);
+		int32_t L_2 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 System.Diagnostics.StackTrace::get_FrameCount() */, L_1);
+		if ((((int32_t)L_2) <= ((int32_t)0)))
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		StackTrace_tD5D45826A379D8DF0CFB2CA206D992EE718C7E99 * L_3 = V_0;
+		NullCheck(L_3);
+		StackFrame_tD06959DD2B585E9BEB73C60AB5C110DE69F23A00 * L_4 = VirtFuncInvoker1< StackFrame_tD06959DD2B585E9BEB73C60AB5C110DE69F23A00 *, int32_t >::Invoke(5 /* System.Diagnostics.StackFrame System.Diagnostics.StackTrace::GetFrame(System.Int32) */, L_3, 0);
+		NullCheck(L_4);
+		MethodBase_t * L_5 = VirtFuncInvoker0< MethodBase_t * >::Invoke(7 /* System.Reflection.MethodBase System.Diagnostics.StackFrame::GetMethod() */, L_4);
+		return L_5;
+	}
+
+IL_001e:
+	{
+		return (MethodBase_t *)NULL;
+	}
+}
 // System.String System.Exception::get_StackTrace()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Exception_get_StackTrace_mF54AABBF2569597935F88AAF7BCD29C6639F8306 (Exception_t * __this, const RuntimeMethod* method)
 {
@@ -30582,7 +30619,7 @@ IL_0028:
 		}
 	}
 	{
-		String_t* L_7 = VirtFuncInvoker0< String_t* >::Invoke(10 /* System.String System.Exception::get_Source() */, __this);
+		String_t* L_7 = VirtFuncInvoker0< String_t* >::Invoke(11 /* System.String System.Exception::get_Source() */, __this);
 		__this->set__source_12(L_7);
 	}
 
@@ -30855,7 +30892,7 @@ IL_0014:
 IL_001e:
 	{
 		String_t* L_3 = Environment_get_NewLine_m5D4F4667FA5D1E2DBDD4DF9696D0CE76C83EF318(/*hidden argument*/NULL);
-		String_t* L_4 = VirtFuncInvoker0< String_t* >::Invoke(9 /* System.String System.Exception::get_StackTrace() */, __this);
+		String_t* L_4 = VirtFuncInvoker0< String_t* >::Invoke(10 /* System.String System.Exception::get_StackTrace() */, __this);
 		int32_t L_5 = __this->get__remoteStackIndex_9();
 		int32_t L_6 = L_5;
 		RuntimeObject * L_7 = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &L_6);
