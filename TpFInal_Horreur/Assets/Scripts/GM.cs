@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using DG.Tweening;
 
 public class GM : MonoBehaviour
@@ -17,8 +18,16 @@ public class GM : MonoBehaviour
 	public int nbSlot;
 	public int tailleInventaire = 1000;
 
+	public int nbKeyTrack = 0;
+	public TextMeshProUGUI keytext;
 
-	public Canvas DeadScreen;
+    private void Update()
+    {
+		keytext.text = nbKeyTrack.ToString() + " / 5 Keys";
+		
+    }
+
+    public Canvas DeadScreen;
 	public Camera cam;
 
 	private bool stressed = false;
