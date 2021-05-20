@@ -11,6 +11,6 @@ public class DeadScreen : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("Niveau_emile_hehe");
+        SceneManager.LoadScene("Niveau");
     }
 }

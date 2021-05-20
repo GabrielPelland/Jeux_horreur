@@ -146,7 +146,7 @@ public class MonsterFiniteStateMachine : MonoBehaviour
 
             //Currently walking to the predefined ambush point
             case State.Ambushing:
-
+             
                 if (agent.remainingDistance < 0.1f)
                 {
                     print("ok");
@@ -181,9 +181,15 @@ public class MonsterFiniteStateMachine : MonoBehaviour
             case State.ChaseSound:
 
                 StopAllCoroutines();
+                print("hey");
+                agent.SetDestination(soundDestination);
+                agent.destination = soundDestination;
+                agent.isStopped = true;
+                agent.isStopped = false;
 
-                if (agent.remainingDistance < 0.1f)
+                if (agent.remainingDistance < 2f && Vector2.Distance(agent.transform.position, soundDestination) < 2f)
                 {
+                    print("hssey");
                     UpdateState(State.ResumeInterruptedAction);
 
                 }
@@ -194,7 +200,10 @@ public class MonsterFiniteStateMachine : MonoBehaviour
 
                 if (interruptedState == State.WaitForAmbush)
                 {
+                    AmbushPoint ambush = ambushPoints.points[ambushPoints.currentID];
+                    agent.SetDestination(ambush.transform.position);
                     UpdateState(State.Ambushing);
+                    
                 }
                 else
                 {
@@ -268,9 +277,13 @@ public class MonsterFiniteStateMachine : MonoBehaviour
 
         animator.SetBool("SoundAlert", false);
         animator.SetBool("Running", true);
-        UpdateState(State.ChaseSound);
-        agent.isStopped = false;
+        agent.enabled = false;
+        agent.enabled = true;
         agent.SetDestination(soundDestination);
+        UpdateState(State.ChaseSound);
+        agent.enabled = false;
+        agent.enabled = true;
+        
     }
 
 
