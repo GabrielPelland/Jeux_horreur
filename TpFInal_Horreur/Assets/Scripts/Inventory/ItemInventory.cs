@@ -56,6 +56,7 @@ public class ItemInventory : MonoBehaviour
                 itemIcon.transform.parent = inventory.inventorySlot[i].transform;
                 itemIcon.transform.position = new Vector3(slotChild.transform.position.x, slotChild.transform.position.y, slotChild.transform.position.z);
 
+                this.transform.parent = inventory.inventorySlot[i].transform;
                 inventory.inventoryItem[i] = this.gameObject;
 
                 inventory.isFull[i] = true;

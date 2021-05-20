@@ -22,6 +22,8 @@ public class Inventory : MonoBehaviour
     private GameObject cameraPosition;
     private GameObject instanceItem;
 
+    private GameObject selectedSlotPosition;
+
     int currentItemId;
 
     private void Start()
@@ -97,20 +99,22 @@ public class Inventory : MonoBehaviour
             }
             else if (Input.GetKey(KeyCode.E))
             {
-                UseItem(keyIndexSlot);
-            }
-            else if (Input.GetKey(KeyCode.Q))
-            {
-                DropItem(keyIndexSlot);
+                if(GameObject.Find("Inventory_Slot_selected(Clone)"))
+                {
+                    UseItem();
+                }
             }
         }
     }
 
-    void UseItem (int selectedSlot)
+
+    void UseItem ()
     {
-        if (inventoryItem[selectedSlot] != null)
+        if (GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(1) != null)
         {
-            currentItemId = (int)inventoryItem[selectedSlot].GetComponent<ItemInventory>().itemObject.itemType;
+            selectedSlotPosition = GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(2).gameObject;
+            print(selectedSlotPosition);
+            currentItemId = (int)selectedSlotPosition.GetComponent<ItemInventory>().itemObject.itemType;
 
             switch (currentItemId)
             {
@@ -119,12 +123,16 @@ public class Inventory : MonoBehaviour
                     break;
                 case 2:
                     GetComponent<ItemLight>().ResetTimeLight();
-                    
+                    //Destroy(GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(2).gameObject);
+                    //Destroy(GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(1).gameObject);
+                    //DestroyHandObject();
                     print("Batterie");
                     break;
                 case 3:
                     GetComponent<ItemLight>().FindLight();
+                    print("Lamp");
                     break;
+
                 case 4:
                     print("Carte");
                     break;
@@ -132,21 +140,6 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    void DropItem (int selectedSlot)
-    {
-        if (inventoryItem[selectedSlot] != null)
-        {
-            instanceItem = GameObject.Instantiate(inventoryItem[selectedSlot]);
-            instanceItem.transform.position = instancePosition.transform.position;
-            instanceItem.transform.rotation = cameraPosition.transform.rotation;
-
-            inventoryItem[selectedSlot] = null;
-            isFull[selectedSlot] = false;
-            DestroyHandObject();
-            Destroy(this.transform.GetChild(0).GetChild(selectedSlot).GetChild(1).gameObject);
-        }
-
-    }
     void InHandItem(int selectedSlot)
     {
         if (isFull[selectedSlot] == true)
