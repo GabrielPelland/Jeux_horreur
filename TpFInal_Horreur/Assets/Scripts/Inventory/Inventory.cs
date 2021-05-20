@@ -99,9 +99,12 @@ public class Inventory : MonoBehaviour
             }
             else if (Input.GetKey(KeyCode.E))
             {
-                if(GameObject.Find("Inventory_Slot_selected(Clone)"))
+                if(GameObject.Find("Inventory_Slot_selected(Clone)") != null)
                 {
-                    UseItem();
+                    if (GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.transform.childCount > 1)
+                    {
+                        UseItem();
+                    }
                 }
             }
         }
@@ -118,23 +121,19 @@ public class Inventory : MonoBehaviour
 
             switch (currentItemId)
             {
-                case 1:
-                    print("Cle");
-                    break;
                 case 2:
                     GetComponent<ItemLight>().ResetTimeLight();
-                    //Destroy(GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(2).gameObject);
-                    //Destroy(GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(1).gameObject);
-                    //DestroyHandObject();
+
+                    Destroy(GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(1).gameObject);
+                    Destroy(GameObject.Find("Inventory_Slot_selected(Clone)").transform.parent.transform.parent.GetChild(2).gameObject);
+
+                    DestroyHandObject();
                     print("Batterie");
+                    
                     break;
                 case 3:
                     GetComponent<ItemLight>().FindLight();
                     print("Lamp");
-                    break;
-
-                case 4:
-                    print("Carte");
                     break;
             }
         }
