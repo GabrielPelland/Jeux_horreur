@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class DeadScreen : MonoBehaviour
 {
     public Image image;
+    public Image image2;
 
     public void Restart()
     {
