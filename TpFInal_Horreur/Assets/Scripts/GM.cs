@@ -26,6 +26,7 @@ public class GM : MonoBehaviour
     {
 		DeadScreen.enabled = true;
 		DeadScreen.GetComponent<DeadScreen>().image.DOFade(1, 2.5f);
+		DeadScreen.GetComponent<DeadScreen>().image2.DOFade(1, 3.5f).SetDelay(1f);
 		StartCoroutine(RestartScene());
     }
 
@@ -34,7 +35,7 @@ public class GM : MonoBehaviour
 	public void SetStress()
     {
 		if (!stressed) {
-			cam.DOFieldOfView(110, 0.7f);
+			cam.DOFieldOfView(95, 0.7f);
 			stressed = true;
 			AudioManager.i.scaryEncounter.Play();
 		}

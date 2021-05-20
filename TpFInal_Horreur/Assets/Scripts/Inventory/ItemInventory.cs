@@ -53,7 +53,7 @@ public class ItemInventory : MonoBehaviour
 
                 slotChild = inventory.inventorySlot[i].transform.GetChild(0).gameObject;
 
-                itemIcon.transform.parent = inventory.inventorySlot[i].transform;
+                itemIcon.transform.SetParent(inventory.inventorySlot[i].transform);
                 itemIcon.transform.position = new Vector3(slotChild.transform.position.x, slotChild.transform.position.y, slotChild.transform.position.z);
 
                 inventory.inventoryItem[i] = this.gameObject;
